@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/marcelo.github.io/static/css/main.56d05cfc.css",
+    "main.js": "/marcelo.github.io/static/js/main.a16a9518.js",
+    "static/js/787.fc537e31.chunk.js": "/marcelo.github.io/static/js/787.fc537e31.chunk.js",
+    "static/media/peruhero.jpg": "/marcelo.github.io/static/media/peruhero.770856ebfa395ec2968d.jpg",
+    "static/media/QMINDLogo.png": "/marcelo.github.io/static/media/QMINDLogo.17052c7e0b2b239e1974.png",
+    "static/media/UMGLogoCircle.png": "/marcelo.github.io/static/media/UMGLogoCircle.38fcaab8c6910afe6a18.png",
+    "static/media/QCCULogoSecondary.png": "/marcelo.github.io/static/media/QCCULogoSecondary.17ce8202b314606d0224.png",
+    "static/media/QCCULogoPrimary.png": "/marcelo.github.io/static/media/QCCULogoPrimary.049c56cc531aacaf2ffd.png",
+    "static/media/logo.svg": "/marcelo.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/marcelo.github.io/index.html",
+    "main.56d05cfc.css.map": "/marcelo.github.io/static/css/main.56d05cfc.css.map",
+    "main.a16a9518.js.map": "/marcelo.github.io/static/js/main.a16a9518.js.map",
+    "787.fc537e31.chunk.js.map": "/marcelo.github.io/static/js/787.fc537e31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56d05cfc.css",
+    "static/js/main.a16a9518.js"
+  ]
+}
