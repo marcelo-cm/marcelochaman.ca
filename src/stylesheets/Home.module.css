@@ -50,6 +50,18 @@ html {
     flex-direction: column;
 }
 
+b {
+    font-weight: bold !important;
+}
+
+a {
+    text-decoration: none;
+    color: #D25959;
+}
+
+button {
+    border: 0;
+}
 /* TOP PART OF WEBSITE, EXISTS ON BOTH PAGES */
 
 /* HEADER STUFF */
@@ -271,14 +283,59 @@ span {
 .workGalleryRow {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
 .galleryCard {
-    height: 20rem;
+    height: 18rem;
     width: calc(33% - 0.5rem);
     background-color: #dedede;
     border-radius: 1rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: #161616;
+    gap: 1rem;
+}
+
+.galleryCard * {
+    color: #161616;
+    /* border: 1px solid red; */
+    width: fit-content;
+    font-weight: 400;
+}
+
+.galleryCard img {
+    width: fit-content;
+    height: 25%;
+}
+
+.galleryCard button {
+    border: 1px solid #161616;
+    border-radius: 1rem;
+    background-color: transparent;
+    padding: 0.3rem 1rem;
+}
+
+.galleryCard button:hover {
+    border: 1px solid #161616;
+    border-radius: 1rem;
+    background-color: #161616;
+    color: #dedede;
+    padding: 0.3rem 1rem;
+}
+
+.workPosition {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 0.2rem;
+}
+
+.workDescription {
+    text-align: left;
 }
 
 /* FOOTER STUFF */

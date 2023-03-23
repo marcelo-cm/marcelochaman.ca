@@ -1,8 +1,13 @@
 import React from 'react'
 import stylesheets from '../stylesheets/Home.module.css'
 import { useState } from 'react'
-import peruhero from '../images/peruhero.jpg'
 import TypingText from '../assets/Typewriter'
+
+import peruhero from '../images/peruhero.jpg'
+import QMINDLogo from '../images/QMINDLogo.png'
+import QCCULogoPrimary from '../images/QCCULogoPrimary.png'
+import QCCULogoSecondary from '../images/QCCULogoSecondary.png'
+import UMGLogoCircle from '../images/UMGLogoCircle.png'
 
 function Home() {
     const [page, setPage] = useState('work');
@@ -61,7 +66,7 @@ function Home() {
                                 what are my skills
                                 </div>
                                 <div class={stylesheets.sectionHeadline}>
-                                    i am
+                                    I am
                                     <span class={stylesheets.TypingText} ><TypingText texts={["a lifelong learner", "a self-taught programmer"]} /></span>
                                 </div>
                                 <div class={stylesheets.workSectionContent}>
@@ -74,9 +79,9 @@ function Home() {
                                     what do i do?
                                     </div>
                                     <nav>
-                                    <button class={ `${period==="past" ? stylesheets.menubuttonleftactive : stylesheets.menubuttonleftinactive}`} onClick={ () => setPeriod("past")}>past</button>
-                                    <button class={ `${period==="present" ? stylesheets.menubuttonrightactive : stylesheets.menubuttonrightinactive }`} onClick={ () => setPeriod("present")}>present</button>
-                                    <button class={ `${period==="future" ? stylesheets.menubuttonrightactive : stylesheets.menubuttonrightinactive }`} onClick={ () => setPeriod("future")}>future</button>
+                                        <button class={ `${period==="past" ? stylesheets.menubuttonleftactive : stylesheets.menubuttonleftinactive}`} onClick={ () => setPeriod("past")}>past</button>
+                                        <button class={ `${period==="present" ? stylesheets.menubuttonrightactive : stylesheets.menubuttonrightinactive }`} onClick={ () => setPeriod("present")}>present</button>
+                                        <button class={ `${period==="future" ? stylesheets.menubuttonrightactive : stylesheets.menubuttonrightinactive }`} onClick={ () => setPeriod("future")}>future</button>
                                     </nav>
                                 </div>
                                 {period==="past" ? (
@@ -105,28 +110,68 @@ function Home() {
                                 
                                 : period==="present" ? (
                                     <div class={stylesheets.workGallery}>
-                                        <div class={stylesheets.galleryCard}>
-
-                                        </div>
-                                        <div class={stylesheets.galleryCard}>
-
-                                        </div>
-                                        <div class={stylesheets.galleryCard}>
-
-                                        </div>
+                                        <div class={stylesheets.workGalleryRow}>
+                                            <a href="https://www.qmind.ca/" target="_blank" class={stylesheets.galleryCard}>
+                                                <img src={QMINDLogo}/>
+                                                <div class={stylesheets.workPosition}>
+                                                    <p><b>Managing Director of Operations</b></p>
+                                                    <p><em><b>February 2023 – Present</b></em></p>
+                                                </div>
+                                                <div class={stylesheets.workDescription}>
+                                                    <p><b>Leading Canada’s largest undergraduate club on AI. </b> 
+                                                    Overseeing QMIND’s AWS-sponsored product incubator, & 300+ delegate 
+                                                    national conference on AI. Managing all marketing, finance, and web development 
+                                                    initiatives.</p>
+                                                </div>
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/officialqccu/posts/?feedView=all" target="_blank"  class={stylesheets.galleryCard}>
+                                                <img src={QCCULogoSecondary}/>
+                                                <div class={stylesheets.workPosition}>
+                                                    <p><b>Competitor</b></p>
+                                                    <p><em><b>February 2023 – Present</b></em></p>
+                                                </div>
+                                                <div class={stylesheets.workDescription}>
+                                                    <p><b>Representing Queen's University in national & international case competitions. </b> 
+                                                    One of six selected in the Queen's Commerce Class of '26.</p>
+                                                </div>
+                                                <button onClick={() => window.open("https://www.linkedin.com/company/officialqccu/posts/?feedView=all")}>Check out more!</button>
+                                            </a>
+                                            <a href="https://www.universitymedia.ca/" target="_blank"  class={stylesheets.galleryCard}>
+                                                <img src={UMGLogoCircle}/>
+                                                <div class={stylesheets.workPosition}>
+                                                    <p><b>Co-Founder & CSO</b></p>
+                                                    <p><em><b>Aug 2022 – Present</b></em></p>
+                                                </div>
+                                                <div class={stylesheets.workDescription}>
+                                                    <p><b>Changing how friendships are formed before stepping on campus. </b> 
+                                                    35k+ follower platform & growing.</p>
+                                                </div>
+                                                <button onClick={() => window.open("https://www.universitymedia.ca/")}>Check out more!</button>
+                                            </a>
+                                        </div>                          
                                     </div>
                                 )
 
                                 : period==="future" ? (
                                     <div class={stylesheets.workGallery}>
-                                        <div class={stylesheets.galleryCard}>
+                                        <div class={stylesheets.workGalleryRow}>
+                                            <div class={stylesheets.galleryCard}>
 
+                                            </div>
+                                            <div class={stylesheets.galleryCard}>
+
+                                            </div>
+                                            <div class={stylesheets.galleryCard}>
+
+                                            </div>
                                         </div>
-                                        <div class={stylesheets.galleryCard}>
+                                        <div class={stylesheets.workGalleryRow}>
+                                            <div class={stylesheets.galleryCard}>
 
-                                        </div>
-                                        <div class={stylesheets.galleryCard}>
+                                            </div>
+                                            <div class={stylesheets.galleryCard}>
 
+                                            </div>
                                         </div>
                                     </div>
                                 )
@@ -141,7 +186,10 @@ function Home() {
                     ) 
 
                     : page==="art" ? (
-                        <div>art</div>
+                        <div>
+                        <p>work in progress, in the meanwhile:</p>
+                        <a href="https://verycalmstudios.ca/" target="_blank"> check me out here [click] !</a>
+                        </div>
                     ) 
 
                     : (
