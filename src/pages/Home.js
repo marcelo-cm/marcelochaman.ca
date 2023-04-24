@@ -59,7 +59,7 @@ function Home() {
             <a
               className={"nav-icon"}
               target="_blank"
-              href="https://twitter.com/marcelochaman"
+              href="https://rooms.xyz/marcelo/bedroom"
             >
               <Icons.Room />
             </a>
