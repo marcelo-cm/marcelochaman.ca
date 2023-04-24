@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/marcelo.github.io/static/css/main.1dfa86e2.css",
-    "main.js": "/marcelo.github.io/static/js/main.1c1ae4a9.js",
+    "main.js": "/marcelo.github.io/static/js/main.ba25313d.js",
     "static/js/787.fc537e31.chunk.js": "/marcelo.github.io/static/js/787.fc537e31.chunk.js",
     "static/media/MarceloChamanMallquiResume1.pdf": "/marcelo.github.io/static/media/MarceloChamanMallquiResume1.fd3020486cce97375056.pdf",
     "static/media/Inter-VariableFont_slnt,wght.ttf": "/marcelo.github.io/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
@@ -14,11 +14,11 @@
     "static/media/email-icon.svg": "/marcelo.github.io/static/media/email-icon.80773e570805083057979760b5436a18.svg",
     "static/media/room-icon.svg": "/marcelo.github.io/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
     "main.1dfa86e2.css.map": "/marcelo.github.io/static/css/main.1dfa86e2.css.map",
-    "main.1c1ae4a9.js.map": "/marcelo.github.io/static/js/main.1c1ae4a9.js.map",
+    "main.ba25313d.js.map": "/marcelo.github.io/static/js/main.ba25313d.js.map",
     "787.fc537e31.chunk.js.map": "/marcelo.github.io/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1dfa86e2.css",
-    "static/js/main.1c1ae4a9.js"
+    "static/js/main.ba25313d.js"
   ]
 }
