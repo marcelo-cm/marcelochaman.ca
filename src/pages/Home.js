@@ -28,7 +28,7 @@ const Card = ({ url, image, orgName, positionName }) => {
 function Home() {
   const cardsCur = [
     {
-      url: "https://www.memoria-ai.github.io.buildspace.ca",
+      url: "https://memoria-ai.github.io/buildspace/",
       image: Img.MemoriaCard,
       orgName: "Memoria | AI-Powered Second Brain",
       positionName: "Front-End + Product",
