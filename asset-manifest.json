@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/marcelo.github.io/static/css/main.1dfa86e2.css",
-    "main.js": "/marcelo.github.io/static/js/main.ba25313d.js",
+    "main.css": "/marcelo.github.io/static/css/main.bcb5f75c.css",
+    "main.js": "/marcelo.github.io/static/js/main.f046a7ac.js",
     "static/js/787.fc537e31.chunk.js": "/marcelo.github.io/static/js/787.fc537e31.chunk.js",
-    "static/media/MarceloChamanMallquiResume1.pdf": "/marcelo.github.io/static/media/MarceloChamanMallquiResume1.fd3020486cce97375056.pdf",
+    "static/media/QMINDCardImg.png": "/marcelo.github.io/static/media/QMINDCardImg.f580c49c09796826203c.png",
+    "static/media/headshot.jpeg": "/marcelo.github.io/static/media/headshot.d6ce0906f93666ca1e1e.jpeg",
+    "static/media/UMGCardImg.png": "/marcelo.github.io/static/media/UMGCardImg.04055a1e169badd38c38.png",
     "static/media/Inter-VariableFont_slnt,wght.ttf": "/marcelo.github.io/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
+    "static/media/MemoriaCardImg.png": "/marcelo.github.io/static/media/MemoriaCardImg.f12dae683decbdb4728c.png",
     "static/media/logo.svg": "/marcelo.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/cv-icon.svg": "/marcelo.github.io/static/media/cv-icon.6c4879eb831ca08e0d5f8e107a9e9808.svg",
     "static/media/github-icon.svg": "/marcelo.github.io/static/media/github-icon.77682b3af99d6ad8b92ca57455f9dde0.svg",
@@ -13,12 +16,12 @@
     "static/media/linkedin-icon.svg": "/marcelo.github.io/static/media/linkedin-icon.6b7bb368e3c149e8878133f1f060410d.svg",
     "static/media/email-icon.svg": "/marcelo.github.io/static/media/email-icon.80773e570805083057979760b5436a18.svg",
     "static/media/room-icon.svg": "/marcelo.github.io/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
-    "main.1dfa86e2.css.map": "/marcelo.github.io/static/css/main.1dfa86e2.css.map",
-    "main.ba25313d.js.map": "/marcelo.github.io/static/js/main.ba25313d.js.map",
+    "main.bcb5f75c.css.map": "/marcelo.github.io/static/css/main.bcb5f75c.css.map",
+    "main.f046a7ac.js.map": "/marcelo.github.io/static/js/main.f046a7ac.js.map",
     "787.fc537e31.chunk.js.map": "/marcelo.github.io/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dfa86e2.css",
-    "static/js/main.ba25313d.js"
+    "static/css/main.bcb5f75c.css",
+    "static/js/main.f046a7ac.js"
   ]
 }
