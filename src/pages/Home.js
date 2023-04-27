@@ -1,24 +1,73 @@
 import React from "react";
 import stylesheets from "../stylesheets/Home.css";
 import * as Icons from "../icons";
-import { MarceloChamanMallquiResume1 as Resume } from "../assets/MarceloChamanMallquiResume1.pdf";
+import * as Img from "../images";
+
+const Card = ({ url, image, orgName, positionName }) => {
+  return (
+    <div>
+      <a href={url}>
+        <div className={"card"}>
+          <div className={"card-image"}>
+            <img src={image} alt="Organization Graphic" />
+          </div>
+          <div className={"name-details"}>
+            <div className="organization">
+              <p>{orgName}</p>
+            </div>
+            <div className="position">
+              <p>{positionName}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  );
+};
 
 function Home() {
+  const cardsCur = [
+    {
+      url: "https://www.memoria-ai.github.io.buildspace.ca",
+      image: Img.MemoriaCard,
+      orgName: "Memoria | AI-Powered Second Brain",
+      positionName: "Front-End + Product",
+    },
+    {
+      url: "https://www.qmind.ca",
+      image: Img.QMINDCard,
+      orgName: "QMIND | Canada's Largest Org. on AI",
+      positionName: "Managing Director of Operations",
+    },
+    {
+      url: "https://www.universitymedia.ca",
+      image: Img.UMGCard,
+      orgName: "University Media Group | 50k Follower Platform",
+      positionName: "Co-founder & CSO",
+    },
+  ];
+
+  const rows = [];
+
+  for (let i = 0; i < cardsCur.length; i += 3) {
+    rows.push(cardsCur.slice(i, i + 3));
+  }
+
   return (
     <div className={"body"}>
       <div className={"viewer"}>
         {/* <!-- This is the header of the website – AKA, the banner. --> */}
-        <div className={"header"}>
+        <div className={"banner"}>
           <div>
             <p>marcelo chaman mallqui</p>
           </div>
           <div className={"nav-bar"}>
-            <div className={"nav-item"}>
+            <a className={"nav-item-active"} href="">
               <p>Home</p>
-            </div>
-            <div className={"nav-item"}>
+            </a>
+            <a className={"nav-item"} href="">
               <p>Playground</p>
-            </div>
+            </a>
           </div>
           <div className={"nav-icons-div"}>
             <a
@@ -63,6 +112,42 @@ function Home() {
             >
               <Icons.Room />
             </a>
+          </div>
+        </div>
+        {/* <!-- This is the body of the website's content --> */}
+        <div className={"content-body"}>
+          <div className={"short-about-me"}>
+            <div className={"marcelo-pics"}>
+              <img src={Img.Headshot} alt="My Headshot" />
+            </div>
+            <div className={"marcelo-bio"}>
+              <p>
+                I’m Marcelo! 19 year old Commerce & Computing student at Queen’s
+                University, passionate about tech, social impact, and art. I’m
+                currently leading QMIND, Canada’s largest undergraduate
+                organization on AI, and building an AI powered second brain,
+                Memoria. I’m an aspiring product manager, artist, and self
+                taught front end developer... but you can learn more below.
+              </p>
+            </div>
+            <div className={"nav-bar"}>
+              <a className={"nav-item"} href="">
+                <p>About Me</p>
+              </a>
+            </div>
+          </div>
+          <div className={"gallery"}>
+            {cardsCur.map((card, index) => {
+              return (
+                <Card
+                  key={index}
+                  url={card.url}
+                  image={card.image}
+                  orgName={card.orgName}
+                  positionName={card.positionName}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
