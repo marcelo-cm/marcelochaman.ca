@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/marcelo.github.io/static/css/main.bcb5f75c.css",
-    "main.js": "/marcelo.github.io/static/js/main.f046a7ac.js",
+    "main.css": "/marcelo.github.io/static/css/main.7c1fb88a.css",
+    "main.js": "/marcelo.github.io/static/js/main.94ba8658.js",
     "static/js/787.fc537e31.chunk.js": "/marcelo.github.io/static/js/787.fc537e31.chunk.js",
     "static/media/QMINDCardImg.png": "/marcelo.github.io/static/media/QMINDCardImg.f580c49c09796826203c.png",
     "static/media/headshot.jpeg": "/marcelo.github.io/static/media/headshot.d6ce0906f93666ca1e1e.jpeg",
@@ -16,12 +16,12 @@
     "static/media/linkedin-icon.svg": "/marcelo.github.io/static/media/linkedin-icon.6b7bb368e3c149e8878133f1f060410d.svg",
     "static/media/email-icon.svg": "/marcelo.github.io/static/media/email-icon.80773e570805083057979760b5436a18.svg",
     "static/media/room-icon.svg": "/marcelo.github.io/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
-    "main.bcb5f75c.css.map": "/marcelo.github.io/static/css/main.bcb5f75c.css.map",
-    "main.f046a7ac.js.map": "/marcelo.github.io/static/js/main.f046a7ac.js.map",
+    "main.7c1fb88a.css.map": "/marcelo.github.io/static/css/main.7c1fb88a.css.map",
+    "main.94ba8658.js.map": "/marcelo.github.io/static/js/main.94ba8658.js.map",
     "787.fc537e31.chunk.js.map": "/marcelo.github.io/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcb5f75c.css",
-    "static/js/main.f046a7ac.js"
+    "static/css/main.7c1fb88a.css",
+    "static/js/main.94ba8658.js"
   ]
 }
