@@ -29,7 +29,7 @@ etc...
     padding: 0;
   
     box-sizing: border-box;
-    border: 0.1px solid rgba(255, 0, 0, 0.25) !important;
+    /* border: 0.1px solid rgba(255, 0, 0, 0.25) !important; */
     border: none;
     background: none;
     color: #dedede;
