@@ -61,7 +61,7 @@ function Home() {
           <div>
             <p>marcelo chaman mallqui</p>
           </div>
-          <div className={"nav-bar"}>
+          <div className={"nav-bar float-middle"}>
             <a className={"nav-item-active"} href="">
               <p>Home</p>
             </a>

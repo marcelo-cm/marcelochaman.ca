@@ -1,5 +1,4 @@
 import React from "react";
-import GalleryItemStyle from "./GalleryItem.module.css"
 
 const Card = ({ url, image, orgName, positionName }) => {
     return (
