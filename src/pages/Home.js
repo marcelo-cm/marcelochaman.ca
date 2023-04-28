@@ -124,10 +124,20 @@ function Home() {
               <p>
                 I’m Marcelo! 19 year old Commerce & Computing student at Queen’s
                 University, passionate about tech, social impact, and art. I’m
-                currently leading QMIND, Canada’s largest undergraduate
-                organization on AI, and building an AI powered second brain,
-                Memoria. I’m an aspiring product manager, artist, and self
-                taught front end developer... but you can learn more below.
+                currently leading{" "}
+                <a target="_blank" href="https://qmind.ca/">
+                  QMIND,
+                </a>
+                Canada’s largest undergraduate organization on AI, and building
+                an AI powered second brain,{" "}
+                <a
+                  target="_blank"
+                  href="https://memoria-ai.github.io/buildspace/"
+                >
+                  Memoria.
+                </a>{" "}
+                I’m an aspiring product manager, artist, and self taught front
+                end developer... but you can learn more below.
               </p>
             </div>
             <div className={"nav-bar"}>
