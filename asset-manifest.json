@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/marcelo.github.io/static/css/main.7c1fb88a.css",
-    "main.js": "/marcelo.github.io/static/js/main.94ba8658.js",
-    "static/js/787.fc537e31.chunk.js": "/marcelo.github.io/static/js/787.fc537e31.chunk.js",
-    "static/media/QMINDCardImg.png": "/marcelo.github.io/static/media/QMINDCardImg.f580c49c09796826203c.png",
-    "static/media/headshot.jpeg": "/marcelo.github.io/static/media/headshot.d6ce0906f93666ca1e1e.jpeg",
-    "static/media/UMGCardImg.png": "/marcelo.github.io/static/media/UMGCardImg.04055a1e169badd38c38.png",
-    "static/media/Inter-VariableFont_slnt,wght.ttf": "/marcelo.github.io/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
-    "static/media/MemoriaCardImg.png": "/marcelo.github.io/static/media/MemoriaCardImg.f12dae683decbdb4728c.png",
-    "static/media/logo.svg": "/marcelo.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/cv-icon.svg": "/marcelo.github.io/static/media/cv-icon.6c4879eb831ca08e0d5f8e107a9e9808.svg",
-    "static/media/github-icon.svg": "/marcelo.github.io/static/media/github-icon.77682b3af99d6ad8b92ca57455f9dde0.svg",
-    "static/media/twitter-icon.svg": "/marcelo.github.io/static/media/twitter-icon.2dacbaca5c2f14c7da51529af7a26d6f.svg",
-    "index.html": "/marcelo.github.io/index.html",
-    "static/media/linkedin-icon.svg": "/marcelo.github.io/static/media/linkedin-icon.6b7bb368e3c149e8878133f1f060410d.svg",
-    "static/media/email-icon.svg": "/marcelo.github.io/static/media/email-icon.80773e570805083057979760b5436a18.svg",
-    "static/media/room-icon.svg": "/marcelo.github.io/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
-    "main.7c1fb88a.css.map": "/marcelo.github.io/static/css/main.7c1fb88a.css.map",
-    "main.94ba8658.js.map": "/marcelo.github.io/static/js/main.94ba8658.js.map",
-    "787.fc537e31.chunk.js.map": "/marcelo.github.io/static/js/787.fc537e31.chunk.js.map"
+    "main.css": "/marcelo/static/css/main.fca16cde.css",
+    "main.js": "/marcelo/static/js/main.d045e252.js",
+    "static/js/787.fc537e31.chunk.js": "/marcelo/static/js/787.fc537e31.chunk.js",
+    "static/media/QMINDCardImg.png": "/marcelo/static/media/QMINDCardImg.f580c49c09796826203c.png",
+    "static/media/headshot.jpeg": "/marcelo/static/media/headshot.d6ce0906f93666ca1e1e.jpeg",
+    "static/media/UMGCardImg.png": "/marcelo/static/media/UMGCardImg.04055a1e169badd38c38.png",
+    "static/media/Inter-VariableFont_slnt,wght.ttf": "/marcelo/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
+    "static/media/MemoriaCardImg.png": "/marcelo/static/media/MemoriaCardImg.f12dae683decbdb4728c.png",
+    "static/media/logo.svg": "/marcelo/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/cv-icon.svg": "/marcelo/static/media/cv-icon.6c4879eb831ca08e0d5f8e107a9e9808.svg",
+    "static/media/github-icon.svg": "/marcelo/static/media/github-icon.77682b3af99d6ad8b92ca57455f9dde0.svg",
+    "static/media/twitter-icon.svg": "/marcelo/static/media/twitter-icon.2dacbaca5c2f14c7da51529af7a26d6f.svg",
+    "static/media/linkedin-icon.svg": "/marcelo/static/media/linkedin-icon.6b7bb368e3c149e8878133f1f060410d.svg",
+    "index.html": "/marcelo/index.html",
+    "static/media/email-icon.svg": "/marcelo/static/media/email-icon.80773e570805083057979760b5436a18.svg",
+    "static/media/room-icon.svg": "/marcelo/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
+    "main.fca16cde.css.map": "/marcelo/static/css/main.fca16cde.css.map",
+    "main.d045e252.js.map": "/marcelo/static/js/main.d045e252.js.map",
+    "787.fc537e31.chunk.js.map": "/marcelo/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c1fb88a.css",
-    "static/js/main.94ba8658.js"
+    "static/css/main.fca16cde.css",
+    "static/js/main.d045e252.js"
   ]
 }
