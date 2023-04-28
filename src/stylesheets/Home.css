@@ -58,13 +58,19 @@ html {
 
 /* GLOBAL STYLING START */
 
-a {
+a, button {
     width: fit-content;
     height: fit-content;
 
     text-decoration: none;
     font-size: inherit;
     /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+p {
+    width: fit-content;
+    height: fit-content;
 }
 
 p a {
@@ -83,6 +89,13 @@ p a:hover {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.rotateNinetyCounter {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    line-height: 1em;
+    position: relative;
+  }
 
 /* GLOBAL STYLING ENDS */
 

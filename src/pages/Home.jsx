@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import stylesheets from "../stylesheets/Home.css";
 import * as Icons from "../icons";
 import * as Img from "../images";
+import Playground from "./Playground.jsx";
 
 const Card = ({ url, image, orgName, positionName }) => {
   return (
@@ -26,6 +27,16 @@ const Card = ({ url, image, orgName, positionName }) => {
 };
 
 function Home() {
+  const [page, setPage] = useState("Home");
+
+  const handleGoToHome = () => {
+    setPage("Home");
+  }
+
+  const handleGoToPlayground = () => {
+    setPage("Playground");
+  }
+
   const cardsCur = [
     {
       url: "https://memoria-ai.github.io/buildspace/",
@@ -62,12 +73,12 @@ function Home() {
             <p>marcelo chaman mallqui</p>
           </div>
           <div className={"nav-bar float-middle"}>
-            <a className={"nav-item-active"} href="">
+            <button onClick={handleGoToHome}className={page == "Home" ? "nav-item-active" : "nav-item"} href="">
               <p>Home</p>
-            </a>
-            <a className={"nav-item"} href="">
+            </button>
+            <button onClick = {handleGoToPlayground} className={page == "Playground" ? "nav-item-active" : "nav-item"} href="">
               <p>Playground</p>
-            </a>
+            </button>
           </div>
           <div className={"nav-icons-div"}>
             <a
@@ -114,52 +125,57 @@ function Home() {
             </a>
           </div>
         </div>
-        {/* <!-- This is the body of the website's content --> */}
-        <div className={"content-body"}>
-          <div className={"short-about-me"}>
-            <div className={"marcelo-pics"}>
-              <img src={Img.Headshot} alt="My Headshot" />
-            </div>
-            <div className={"marcelo-bio"}>
-              <p>
-                I’m Marcelo! 19 year old Commerce & Computing student at Queen’s
-                University, passionate about tech, social impact, and art. I’m
-                currently leading{" "}
-                <a target="_blank" href="https://qmind.ca/">
-                  QMIND,
+        {page == "Home" ? (
+          <div className={"content-body"}>
+            <div className={"short-about-me"}>
+              <div className={"marcelo-pics"}>
+                <img src={Img.Headshot} alt="My Headshot" />
+              </div>
+              <div className={"marcelo-bio"}>
+                <p>
+                  I’m Marcelo! 19 year old Commerce & Computing student at
+                  Queen’s University, passionate about tech, social impact, and
+                  art. I’m currently leading{" "}
+                  <a target="_blank" href="https://qmind.ca/">
+                    QMIND,
+                  </a>
+                  Canada’s largest undergraduate organization on AI, and
+                  building an AI powered second brain,{" "}
+                  <a
+                    target="_blank"
+                    href="https://memoria-ai.github.io/buildspace/"
+                  >
+                    Memoria.
+                  </a>{" "}
+                  I’m an aspiring product manager, artist, and self taught front
+                  end developer... but you can learn more below.
+                </p>
+              </div>
+              <div className={"nav-bar"}>
+                <a className={"nav-item"} href="">
+                  <p>About Me</p>
                 </a>
-                Canada’s largest undergraduate organization on AI, and building
-                an AI powered second brain,{" "}
-                <a
-                  target="_blank"
-                  href="https://memoria-ai.github.io/buildspace/"
-                >
-                  Memoria.
-                </a>{" "}
-                I’m an aspiring product manager, artist, and self taught front
-                end developer... but you can learn more below.
-              </p>
+              </div>
             </div>
-            <div className={"nav-bar"}>
-              <a className={"nav-item"} href="">
-                <p>About Me</p>
-              </a>
+            <div className={"gallery"}>
+              {cardsCur.map((card, index) => {
+                return (
+                  <Card
+                    key={index}
+                    url={card.url}
+                    image={card.image}
+                    orgName={card.orgName}
+                    positionName={card.positionName}
+                  />
+                );
+              })}
             </div>
           </div>
-          <div className={"gallery"}>
-            {cardsCur.map((card, index) => {
-              return (
-                <Card
-                  key={index}
-                  url={card.url}
-                  image={card.image}
-                  orgName={card.orgName}
-                  positionName={card.positionName}
-                />
-              );
-            })}
+        ) : (
+          <div className={"content-body"}>
+            <Playground/>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

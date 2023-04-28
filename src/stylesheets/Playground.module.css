@@ -1,0 +1,70 @@
+/* 
+CONVENTION
+
+LAYOUT
+width: ;
+height: ;
+
+display: ;
+flex-direction: ;
+justify-content: ;
+align-items: ;
+gap: ;
+margin: ;
+padding: ;
+position: ;
+etc...
+
+STYLE
+background: ;
+color: ;
+font-size: ;
+etc...
+
+*/
+
+/* DEFAULT STYLING */
+* {
+    margin: 0;
+    padding: 0;
+  
+    box-sizing: border-box;
+    border: 0.1px solid rgba(255, 0, 0, 0.25) !important;
+    border: none;
+    background: none;
+    color: #dedede;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.galleryTitle {
+    display: flex;
+    height: fit-content;
+    width: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgGallery img {
+    height: 300px;
+
+    object-fit: contain;
+
+    border-radius: 1rem;
+}
+
+.imgGallery {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    position: relative;
+
+    /* border: 1px solid blue !important; */
+}
