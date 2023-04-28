@@ -152,7 +152,7 @@ function Home() {
                 </p>
               </div>
               <div className={"nav-bar"}>
-                <a className={"nav-item"} href="">
+                <a className={"nav-item"} target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                   <p>About Me</p>
                 </a>
               </div>

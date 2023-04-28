@@ -119,7 +119,7 @@ p a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
     gap: 2rem;
 
     background: #1C1C1C;
