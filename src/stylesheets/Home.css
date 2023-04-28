@@ -93,7 +93,7 @@ p a:hover {
 .rotateNinetyCounter {
     transform: rotate(-90deg);
     white-space: nowrap;
-    line-height: 1em;
+    line-height: 1em;`
     position: relative;
   }
 
