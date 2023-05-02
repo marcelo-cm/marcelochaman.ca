@@ -14,7 +14,7 @@ function Playground() {
     <div className="content-body">
         <div className={s.imgGallery}>
             <div className={s.galleryTitle}>
-            <p className="rotateNinetyCounter">film photography</p>
+            <p className="rotateNinetyCounter">photos</p>
             </div>
             {film.map((image, index) => (
                 <img key={index} src={image} alt="" />

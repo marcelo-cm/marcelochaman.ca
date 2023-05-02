@@ -61,19 +61,19 @@ function Home() {
   const cardsPrev22 = [
     {
       url: "https://www.instagram.com/ustudios__/",
-      image: Img.MemoriaCard,
+      image: Img.uCard,
       orgName: "ustudios. | Fashion & Fashion Manufacturing",
       positionName: "Founder",
     },
     {
       url: "https://verycalmstudios.ca",
-      image: Img.QMINDCard,
+      image: Img.veryCard,
       orgName: "verycalmstudios | Marketing & Design Studio",
       positionName: "Founder",
     },
     {
       url: "https://www.instagram.com/bold.conference/",
-      image: Img.UMGCard,
+      image: Img.boldCard,
       orgName: "BOLD | Business Education for Highschoolers",
       positionName: "CEO",
     },
