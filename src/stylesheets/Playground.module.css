@@ -48,7 +48,7 @@ etc...
 }
 
 .imgGallery img {
-    height: 300px;
+    height: 100%;
 
     object-fit: contain;
 
@@ -56,15 +56,18 @@ etc...
 }
 
 .imgGallery {
-    width: 100%;
-    height: fit-content;
+    width: calc(100vw - 2.2% - 2rem);
+    height: 300px;
 
     display: flex;
     flex-direction: row;
+
     align-items: center;
     gap: 1rem;
 
     position: relative;
+    overflow: scroll;
+    left: 0;
 
     /* border: 1px solid blue !important; */
 }

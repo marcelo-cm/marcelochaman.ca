@@ -58,6 +58,27 @@ function Home() {
     },
   ];
 
+  const cardsPrev22 = [
+    {
+      url: "https://www.instagram.com/ustudios__/",
+      image: Img.MemoriaCard,
+      orgName: "ustudios. | Fashion & Fashion Manufacturing",
+      positionName: "Founder",
+    },
+    {
+      url: "https://verycalmstudios.ca",
+      image: Img.QMINDCard,
+      orgName: "verycalmstudios | Marketing & Design Studio",
+      positionName: "Founder",
+    },
+    {
+      url: "https://www.instagram.com/bold.conference/",
+      image: Img.UMGCard,
+      orgName: "BOLD | Business Education for Highschoolers",
+      positionName: "CEO",
+    },
+  ];
+
   const rows = [];
 
   for (let i = 0; i < cardsCur.length; i += 3) {
@@ -159,6 +180,21 @@ function Home() {
             </div>
             <div className={"gallery"}>
               {cardsCur.map((card, index) => {
+                return (
+                  <Card
+                    key={index}
+                    url={card.url}
+                    image={card.image}
+                    orgName={card.orgName}
+                    positionName={card.positionName}
+                  />
+                );
+              })}
+            </div>
+            <p>Previous & Miscellaneous Projects</p>
+            <p><em>2022</em></p>
+            <div className={"gallery"}>
+              {cardsPrev22.map((card, index) => {
                 return (
                   <Card
                     key={index}
