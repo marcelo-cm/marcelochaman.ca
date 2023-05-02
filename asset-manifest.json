@@ -1,10 +1,19 @@
 {
   "files": {
-    "main.css": "/marcelo/static/css/main.5fb82493.css",
-    "main.js": "/marcelo/static/js/main.97c3e493.js",
+    "main.css": "/marcelo/static/css/main.6d2a2580.css",
+    "main.js": "/marcelo/static/js/main.e1745f90.js",
     "static/js/787.fc537e31.chunk.js": "/marcelo/static/js/787.fc537e31.chunk.js",
+    "static/media/000055590030 copy 2.jpg": "/marcelo/static/media/000055590030 copy 2.d27907d16afe9121f8e8.jpg",
+    "static/media/000055590030 copy 3.jpg": "/marcelo/static/media/000055590030 copy 3.d27907d16afe9121f8e8.jpg",
+    "static/media/000055590030 copy.jpg": "/marcelo/static/media/000055590030 copy.d27907d16afe9121f8e8.jpg",
     "static/media/000055590030.jpg": "/marcelo/static/media/000055590030.d27907d16afe9121f8e8.jpg",
+    "static/media/000055590024 copy 2.jpg": "/marcelo/static/media/000055590024 copy 2.a886c96f9fba965e5004.jpg",
+    "static/media/000055590024 copy 3.jpg": "/marcelo/static/media/000055590024 copy 3.a886c96f9fba965e5004.jpg",
+    "static/media/000055590024 copy.jpg": "/marcelo/static/media/000055590024 copy.a886c96f9fba965e5004.jpg",
     "static/media/000055590024.jpg": "/marcelo/static/media/000055590024.a886c96f9fba965e5004.jpg",
+    "static/media/000055590026-Edit copy 2.jpg": "/marcelo/static/media/000055590026-Edit copy 2.a58dd724903975c13841.jpg",
+    "static/media/000055590026-Edit copy 3.jpg": "/marcelo/static/media/000055590026-Edit copy 3.a58dd724903975c13841.jpg",
+    "static/media/000055590026-Edit copy.jpg": "/marcelo/static/media/000055590026-Edit copy.a58dd724903975c13841.jpg",
     "static/media/000055590026-Edit.jpg": "/marcelo/static/media/000055590026-Edit.a58dd724903975c13841.jpg",
     "static/media/QMINDCardImg.png": "/marcelo/static/media/QMINDCardImg.f580c49c09796826203c.png",
     "static/media/headshot.jpeg": "/marcelo/static/media/headshot.d6ce0906f93666ca1e1e.jpeg",
@@ -19,12 +28,12 @@
     "index.html": "/marcelo/index.html",
     "static/media/email-icon.svg": "/marcelo/static/media/email-icon.80773e570805083057979760b5436a18.svg",
     "static/media/room-icon.svg": "/marcelo/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
-    "main.5fb82493.css.map": "/marcelo/static/css/main.5fb82493.css.map",
-    "main.97c3e493.js.map": "/marcelo/static/js/main.97c3e493.js.map",
+    "main.6d2a2580.css.map": "/marcelo/static/css/main.6d2a2580.css.map",
+    "main.e1745f90.js.map": "/marcelo/static/js/main.e1745f90.js.map",
     "787.fc537e31.chunk.js.map": "/marcelo/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fb82493.css",
-    "static/js/main.97c3e493.js"
+    "static/css/main.6d2a2580.css",
+    "static/js/main.e1745f90.js"
   ]
 }
