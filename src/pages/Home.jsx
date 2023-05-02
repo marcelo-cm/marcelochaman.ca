@@ -93,14 +93,6 @@ function Home() {
           <div>
             <p>marcelo chaman mallqui</p>
           </div>
-          <div className={"nav-bar float-middle"}>
-            <button onClick={handleGoToHome}className={page == "Home" ? "nav-item-active" : "nav-item"} href="">
-              <p>Home</p>
-            </button>
-            <button onClick = {handleGoToPlayground} className={page == "Playground" ? "nav-item-active" : "nav-item"} href="">
-              <p>Playground</p>
-            </button>
-          </div>
           <div className={"nav-icons-div"}>
             <a
               className={"nav-icon"}
@@ -144,6 +136,14 @@ function Home() {
             >
               <Icons.Room />
             </a>
+          </div>
+          <div className={"nav-bar float-middle"}>
+            <button onClick={handleGoToHome}className={page == "Home" ? "nav-item-active" : "nav-item"} href="">
+              <p>Home</p>
+            </button>
+            <button onClick = {handleGoToPlayground} className={page == "Playground" ? "nav-item-active" : "nav-item"} href="">
+              <p>Playground</p>
+            </button>
           </div>
         </div>
         {page == "Home" ? (
