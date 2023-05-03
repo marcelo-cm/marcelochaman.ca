@@ -586,6 +586,7 @@ p a:hover {
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
+        text-align: left;
 
         color: #DEDEDE;
     }
@@ -593,7 +594,7 @@ p a:hover {
     .card .position * {
         font-style: italic;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         text-align: left;
         line-height: 24px;
 
