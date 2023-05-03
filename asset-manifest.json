@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/marcelo/static/css/main.33979590.css",
+    "main.css": "/marcelo/static/css/main.d18f15d7.css",
     "main.js": "/marcelo/static/js/main.5b593e9b.js",
     "static/js/787.fc537e31.chunk.js": "/marcelo/static/js/787.fc537e31.chunk.js",
     "static/media/uhead-3dspin-final.gif": "/marcelo/static/media/uhead-3dspin-final.31b554cd1f69a68814da.gif",
@@ -75,12 +75,12 @@
     "static/media/linkedin-icon.svg": "/marcelo/static/media/linkedin-icon.6b7bb368e3c149e8878133f1f060410d.svg",
     "static/media/email-icon.svg": "/marcelo/static/media/email-icon.80773e570805083057979760b5436a18.svg",
     "static/media/room-icon.svg": "/marcelo/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
-    "main.33979590.css.map": "/marcelo/static/css/main.33979590.css.map",
+    "main.d18f15d7.css.map": "/marcelo/static/css/main.d18f15d7.css.map",
     "main.5b593e9b.js.map": "/marcelo/static/js/main.5b593e9b.js.map",
     "787.fc537e31.chunk.js.map": "/marcelo/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33979590.css",
+    "static/css/main.d18f15d7.css",
     "static/js/main.5b593e9b.js"
   ]
 }
