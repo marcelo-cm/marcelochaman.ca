@@ -365,7 +365,7 @@ p a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
+        padding: 1rem 1rem 5rem;
         gap: 1rem;
     
         background: #1C1C1C;
@@ -503,7 +503,7 @@ p a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     /* SHORT ABOUT ME START */
@@ -544,7 +544,7 @@ p a:hover {
         width: fit-content ;
         display: grid;
         grid-template-columns: repeat(auto-fit, 350px);
-        grid-gap: 0.5rem;
+        grid-gap: 1rem;
         align-items: center;
         justify-content: center;
     }
