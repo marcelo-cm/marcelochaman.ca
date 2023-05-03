@@ -501,11 +501,12 @@ p a:hover {
 
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 1rem;
     }
 
-    /* SHORT ABOUT ME START */`
+    /* SHORT ABOUT ME START */
 
     .short-about-me {
         height: fit-content;
@@ -543,7 +544,7 @@ p a:hover {
         width: fit-content ;
         display: grid;
         grid-template-columns: repeat(auto-fit, 350px);
-        grid-gap: 0rem;
+        grid-gap: 0.5rem;
         align-items: center;
         justify-content: center;
     }

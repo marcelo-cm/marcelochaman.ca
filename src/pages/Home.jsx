@@ -63,19 +63,19 @@ function Home() {
       url: "https://www.instagram.com/ustudios__/",
       image: Img.uCard,
       orgName: "ustudios. | Fashion & Fashion Manufacturing",
-      positionName: "Founder",
+      positionName: "Founder ['22]",
     },
     {
       url: "https://verycalmstudios.ca",
       image: Img.veryCard,
       orgName: "verycalmstudios | Marketing & Design Studio",
-      positionName: "Founder",
+      positionName: "Founder ['22]",
     },
     {
       url: "https://www.instagram.com/bold.conference/",
       image: Img.boldCard,
       orgName: "BOLD | Business Education for Highschoolers",
-      positionName: "CEO",
+      positionName: "CEO ['21-'22]",
     },
   ];
 
@@ -192,7 +192,6 @@ function Home() {
               })}
             </div>
             <p>Previous & Miscellaneous Projects</p>
-            <p><em>2022</em></p>
             <div className={"gallery"}>
               {cardsPrev22.map((card, index) => {
                 return (
