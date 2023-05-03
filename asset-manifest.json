@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/marcelo/static/css/main.d18f15d7.css",
-    "main.js": "/marcelo/static/js/main.5b593e9b.js",
+    "main.js": "/marcelo/static/js/main.8bfda905.js",
     "static/js/787.fc537e31.chunk.js": "/marcelo/static/js/787.fc537e31.chunk.js",
     "static/media/uhead-3dspin-final.gif": "/marcelo/static/media/uhead-3dspin-final.31b554cd1f69a68814da.gif",
     "static/media/IMG_3906.jpeg": "/marcelo/static/media/IMG_3906.2a0d11c1730bb860a775.jpeg",
@@ -76,11 +76,11 @@
     "static/media/email-icon.svg": "/marcelo/static/media/email-icon.80773e570805083057979760b5436a18.svg",
     "static/media/room-icon.svg": "/marcelo/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
     "main.d18f15d7.css.map": "/marcelo/static/css/main.d18f15d7.css.map",
-    "main.5b593e9b.js.map": "/marcelo/static/js/main.5b593e9b.js.map",
+    "main.8bfda905.js.map": "/marcelo/static/js/main.8bfda905.js.map",
     "787.fc537e31.chunk.js.map": "/marcelo/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d18f15d7.css",
-    "static/js/main.5b593e9b.js"
+    "static/js/main.8bfda905.js"
   ]
 }
