@@ -3,6 +3,7 @@ import stylesheets from "../stylesheets/Home.css";
 import * as Icons from "../icons";
 import * as Img from "../images";
 import Playground from "./Playground.jsx";
+import Inspect from "inspx";
 
 const Card = ({ url, image, orgName, positionName }) => {
   return (
@@ -86,6 +87,7 @@ function Home() {
   }
 
   return (
+    <Inspect>
     <div className={"body"}>
       <div className={"viewer"}>
         {/* <!-- This is the header of the website – AKA, the banner. --> */}
@@ -213,6 +215,7 @@ function Home() {
         )}
       </div>
     </div>
+    </Inspect>
   );
 }
 
