@@ -28,6 +28,7 @@ const Card = ({ url, image, orgName, positionName }) => {
 };
 
 function Home() {
+
   const [page, setPage] = useState("Home");
 
   const handleGoToHome = () => {
@@ -36,7 +37,11 @@ function Home() {
 
   const handleGoToPlayground = () => {
     setPage("Playground");
-  }
+  }  
+  
+  // const handleGoToAbout = () => {
+  //   setPage("About");
+  // }
 
   const cardsCur = [
     {
@@ -87,7 +92,6 @@ function Home() {
   }
 
   return (
-    <Inspect>
     <div className={"body"}>
       <div className={"viewer"}>
         {/* <!-- This is the header of the website – AKA, the banner. --> */}
@@ -140,10 +144,13 @@ function Home() {
             </a>
           </div>
           <div className={"nav-bar float-middle"}>
-            <button onClick={handleGoToHome}className={page == "Home" ? "nav-item-active" : "nav-item"} href="">
+            <button onClick={handleGoToHome}className={page == "Home" ? "nav-item-active" : "nav-item"}>
               <p>Home</p>
             </button>
-            <button onClick = {handleGoToPlayground} className={page == "Playground" ? "nav-item-active" : "nav-item"} href="">
+            {/* <button onClick={handleGoToAbout} className={page == "About" ? "nav-item-active" : "nav-item"}>
+              <p>About</p>
+            </button> */}
+            <button onClick={handleGoToPlayground} className={page == "Playground" ? "nav-item-active" : "nav-item"}>
               <p>Playground</p>
             </button>
           </div>
@@ -208,14 +215,15 @@ function Home() {
               })}
             </div>
           </div>
-        ) : (
+        ) : page == "Playground" ? (
           <div className={"content-body"}>
             <Playground/>
           </div>
+        ) : (
+          <div>You shouldn't be here!</div>
         )}
       </div>
     </div>
-    </Inspect>
   );
 }
 
