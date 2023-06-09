@@ -4,6 +4,7 @@ import * as Icons from "../icons";
 import * as Img from "../images";
 import Playground from "./Playground.jsx";
 import Inspect from "inspx";
+import { motion } from "framer-motion";
 
 const Card = ({ url, image, orgName, positionName }) => {
   return (
@@ -28,24 +29,9 @@ const Card = ({ url, image, orgName, positionName }) => {
 };
 
 function Home() {
-
-  const [page, setPage] = useState("Home");
-
-  const handleGoToHome = () => {
-    setPage("Home");
-  }
-
-  const handleGoToPlayground = () => {
-    setPage("Playground");
-  }  
-  
-  // const handleGoToAbout = () => {
-  //   setPage("About");
-  // }
-
   const cardsCur = [
     {
-      url: "https://memoria-ai.github.io/buildspace/",
+      url: "https://memoria.live/",
       image: Img.MemoriaCard,
       orgName: "Memoria | AI-Powered Second Brain",
       positionName: "Front-End + Product",
@@ -85,143 +71,69 @@ function Home() {
     },
   ];
 
-  const rows = [];
-
-  for (let i = 0; i < cardsCur.length; i += 3) {
-    rows.push(cardsCur.slice(i, i + 3));
-  }
-
   return (
-    <div className={"body"}>
-      <div className={"viewer"}>
-        {/* <!-- This is the header of the website – AKA, the banner. --> */}
-        <div className={"banner"}>
-          <div>
-            <p>marcelo chaman mallqui</p>
-          </div>
-          <div className={"nav-icons-div"}>
-            <a
-              className={"nav-icon"}
-              target="_blank"
-              href="https://twitter.com/marcelochaman"
-            >
-              <Icons.Twitter />
-            </a>
-            <a
-              className={"nav-icon"}
-              target="_blank"
-              href="https://www.linkedin.com/in/marc-cham/"
-            >
-              <Icons.LinkedIn />
-            </a>
-            <a
-              className={"nav-icon"}
-              target="_blank"
-              href="https://github.com/marcelo-cm"
-            >
-              <Icons.GitHub />
-            </a>
-            <a
-              className={"nav-icon"}
-              target="_blank"
-              href="mailto:marcechaman@gmail.com"
-            >
-              <Icons.Email />
-            </a>
-            <a
-              className={"nav-icon"}
-              target="_blank"
-              href="https://drive.google.com/file/d/1PAtoZa13BoS6FjoTnvfv5tKPZGmosgsS/view?usp=sharing"
-            >
-              <Icons.CV />
-            </a>
-            <a
-              className={"nav-icon"}
-              target="_blank"
-              href="https://rooms.xyz/marcelo/bedroom"
-            >
-              <Icons.Room />
-            </a>
-          </div>
-          <div className={"nav-bar float-middle"}>
-            <button onClick={handleGoToHome}className={page == "Home" ? "nav-item-active" : "nav-item"}>
-              <p>Home</p>
-            </button>
-            {/* <button onClick={handleGoToAbout} className={page == "About" ? "nav-item-active" : "nav-item"}>
-              <p>About</p>
-            </button> */}
-            <button onClick={handleGoToPlayground} className={page == "Playground" ? "nav-item-active" : "nav-item"}>
-              <p>Playground</p>
-            </button>
-          </div>
+    <div className={"content-body"}>
+      <div className={"short-about-me"}>
+        <div className={"marcelo-pics"}>
+          <img src={Img.Banner1} alt="Me and the Golden Gate Bridge" />
+          <img src={Img.Headshot} alt="My Headshot" />
+          <img src={Img.Banner2} alt="Me and my brother, Gonza" />
         </div>
-        {page == "Home" ? (
-          <div className={"content-body"}>
-            <div className={"short-about-me"}>
-              <div className={"marcelo-pics"}>
-                <img src={Img.Headshot} alt="My Headshot" />
-              </div>
-              <div className={"marcelo-bio"}>
-                <p>
-                  I’m Marcelo! 19 year old Commerce & Computing student at
-                  Queen’s University, passionate about tech, social impact, and
-                  art. I’m currently leading{" "}
-                  <a target="_blank" href="https://qmind.ca/">
-                    QMIND,
-                  </a>
-                  Canada’s largest undergraduate organization on AI, and
-                  building an AI powered second brain,{" "}
-                  <a
-                    target="_blank"
-                    href="https://memoria-ai.github.io/buildspace/"
-                  >
-                    Memoria.
-                  </a>{" "}
-                  I’m an aspiring product manager, artist, and self taught front
-                  end developer... but you can learn more below.
-                </p>
-              </div>
-              <div className={"nav-bar"}>
-                <a className={"nav-item"} target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                  <p>About Me</p>
-                </a>
-              </div>
-            </div>
-            <div className={"gallery"}>
-              {cardsCur.map((card, index) => {
-                return (
-                  <Card
-                    key={index}
-                    url={card.url}
-                    image={card.image}
-                    orgName={card.orgName}
-                    positionName={card.positionName}
-                  />
-                );
-              })}
-            </div>
-            <p>Previous & Miscellaneous Projects</p>
-            <div className={"gallery"}>
-              {cardsPrev22.map((card, index) => {
-                return (
-                  <Card
-                    key={index}
-                    url={card.url}
-                    image={card.image}
-                    orgName={card.orgName}
-                    positionName={card.positionName}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        ) : page == "Playground" ? (
-          <div className={"content-body"}>
-            <Playground/>
-          </div>
-        ) : (
-          <div>You shouldn't be here!</div>
-        )}
+        <div className={"marcelo-bio"}>
+          <p style={{ textAlign: "center" }}>
+            I’m Marcelo! 19 year old Commerce & Computing student at Queen’s
+            University, passionate about tech, social impact, and art. I’m
+            currently leading{" "}
+            <a target="_blank" href="https://qmind.ca/">
+              QMIND,
+            </a>
+            Canada’s largest undergraduate organization on AI, and building an
+            AI powered second brain,{" "}
+            <a target="_blank" href="https://memoria.live/">
+              Memoria.
+            </a>{" "}
+            I’m an aspiring product manager, artist, and self taught front end
+            developer... but you can learn more below.
+          </p>
+        </div>
+        <div className={"nav-bar"}>
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={"nav-item"}
+            target="_blank"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          >
+            <p>About Me</p>
+          </motion.a>
+        </div>
+      </div>
+      <div className={"gallery"}>
+        {cardsCur.map((card, index) => {
+          return (
+            <Card
+              key={index}
+              url={card.url}
+              image={card.image}
+              orgName={card.orgName}
+              positionName={card.positionName}
+            />
+          );
+        })}
+      </div>
+      <p>Previous & Miscellaneous Projects</p>
+      <div className={"gallery"}>
+        {cardsPrev22.map((card, index) => {
+          return (
+            <Card
+              key={index}
+              url={card.url}
+              image={card.image}
+              orgName={card.orgName}
+              positionName={card.positionName}
+            />
+          );
+        })}
       </div>
     </div>
   );
