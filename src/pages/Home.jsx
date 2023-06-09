@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import stylesheets from "../stylesheets/Home.css";
-import * as Icons from "../icons";
 import * as Img from "../images";
-import Playground from "./Playground.jsx";
-import Inspect from "inspx";
 import { motion } from "framer-motion";
 
 const Card = ({ url, image, orgName, positionName }) => {
@@ -84,12 +81,12 @@ function Home() {
             I’m Marcelo! 19 year old Commerce & Computing student at Queen’s
             University, passionate about tech, social impact, and art. I’m
             currently leading{" "}
-            <a target="_blank" href="https://qmind.ca/">
+            <a target="_blank" rel="noreferrer" href="https://qmind.ca/">
               QMIND,
             </a>
             Canada’s largest undergraduate organization on AI, and building an
             AI powered second brain,{" "}
-            <a target="_blank" href="https://memoria.live/">
+            <a target="_blank" rel="noreferrer" href="https://memoria.live/">
               Memoria.
             </a>{" "}
             I’m an aspiring product manager, artist, and self taught front end

@@ -21,7 +21,7 @@ const Navigation = () => {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className={resolvedPath == isActive ? "nav-item-active" : "nav-item"}
+          className={resolvedPath === isActive ? "nav-item-active" : "nav-item"}
         >
           <p>{children}</p>
         </motion.div>

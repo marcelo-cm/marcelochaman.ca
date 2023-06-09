@@ -1,4 +1,3 @@
-import Navigation from "../assets/Navigation/Navigation";
 import s from "../stylesheets/Playground.module.css";
 import React from "react";
 
