@@ -3,7 +3,7 @@ import Inspect from "inspx";
 import Playground from "./pages/Playground";
 import Navigation from "./assets/Navigation/Navigation";
 import About from "./pages/About";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Router } from "react-router-dom";
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
         <div className="viewer">
           <Navigation />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="*" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route path="/Playground" element={<Playground />} />
             <Route path="/About" element={<About />} />
           </Routes>

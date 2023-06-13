@@ -5,8 +5,6 @@ import { useMatch, useResolvedPath } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  const path = window.location.pathname;
-
   const iconAnimate = {
     hover: { rotate: 360, transition: { ease: "easeOut" } },
     click: { rotate: 0, transition: { ease: "easeOut" } },
