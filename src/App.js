@@ -1,5 +1,6 @@
 import Home from "./pages/Home.jsx";
 import Inspect from "inspx";
+import stylesheets from "./stylesheets/Home.css";
 import Playground from "./pages/Playground";
 import Navigation from "./assets/Navigation/Navigation";
 import { Route, Routes } from "react-router-dom";
