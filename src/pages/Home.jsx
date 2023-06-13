@@ -1,5 +1,5 @@
 import React from "react";
-import stylesheets from "../stylesheets/Home.css";
+import styles from "../stylesheets/About.module.css";
 import * as Img from "../images";
 import { motion } from "framer-motion";
 
@@ -70,39 +70,55 @@ function Home() {
 
   return (
     <div className={"content-body"}>
-      <div className={"short-about-me"}>
-        <div className={"marcelo-pics"}>
-          <img src={Img.Banner1} alt="Me and the Golden Gate Bridge" />
-          <img src={Img.Headshot} alt="My Headshot" />
-          <img src={Img.Banner2} alt="Me and my brother, Gonza" />
-        </div>
-        <div className={"marcelo-bio"}>
-          <p style={{ textAlign: "center" }}>
-            I’m Marcelo! 19 year old Commerce & Computing student at Queen’s
-            University, passionate about tech, social impact, and art. I’m
-            currently leading{" "}
-            <a target="_blank" rel="noreferrer" href="https://qmind.ca/">
+      <div className={styles["home-hero"]}>
+        <div className={styles["home-hero-text"]}>
+          <h2>Hey! I'm Marcelo Chaman Mallqui</h2>
+          <p>
+            Second-year Commerce & Computing student at Queen’s University in
+            Kingston, ON. I’m extremely passionate about tech, social impact,
+            and art. I'm a self-taught front-end developer and aspire to be a
+            successful startup founder and product manager. <br />
+            <br />
+            Currently, I'm the Managing Director of Operations at{" "}
+            <a target="_blank" rel="noreferrer" href="https://www.qmind.ca/">
               QMIND,
             </a>
-            Canada’s largest undergraduate organization on AI, and building an
-            AI powered second brain,{" "}
+            Canada's largest undergraduate organization on AI & ML. I am
+            building{" "}
             <a target="_blank" rel="noreferrer" href="https://memoria.live/">
-              Memoria.
-            </a>{" "}
-            I’m an aspiring product manager, artist, and self taught front end
-            developer... but you can learn more below.
+              Memoria
+            </a>
+             – an AI tool to record, transcribe and talk to your thoughts
+            – alongside a good friend and 2 ex-Google PMs, and represent Queen’s
+            in international case competition!
+            <br />
+            <br />
+            When I’m not doing any of that I’m watching superhero movies,
+            shooting film, or learning and random new things such as making this
+            website!
+            <br />
+            <br />
+            My story with tech begins with iOS 7, and if you want to know
+            more...
           </p>
+          <div className={styles["button-container"]}>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={styles["button"]}
+              target="_blank"
+              href="mailto: marcechaman@gmail.com"
+            >
+              <p>Email Me!</p>
+            </motion.a>
+          </div>
         </div>
-        <div className={"nav-bar"}>
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={"nav-item"}
-            target="_blank"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          >
-            <p>About Me</p>
-          </motion.a>
+        <div className={styles["hero-image-container"]}>
+          <img
+            className={styles["hero-image"]}
+            src={Img.HeroImage}
+            alt="Me and the Golden Gate Bridge"
+          />
         </div>
       </div>
       <div className={"gallery"}>

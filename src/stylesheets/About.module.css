@@ -1,0 +1,229 @@
+/* HOME PAGE HERO STARTS */
+
+@media screen and (min-width: 480px) {
+  .home-hero {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero-image-container {
+    width: 35%;
+    min-width: 400px;
+    max-width: 50%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .home-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 50%;
+    width: 60%;
+    justify-content: left;
+  }
+
+  .button-container {
+    height: fit-content;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    gap: 20px;
+
+    background: #1c1c1c;
+    border: 2px solid #343434;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 55px;
+  }
+
+  .button {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px 16px;
+    user-select: none;
+    align-self: center;
+
+    border-radius: 25px;
+    font-size: 12pt;
+    font-weight: 700;
+  }
+
+  .button p {
+    font-size: 12pt;
+    font-weight: 700 !important;
+  }
+
+  .button-active {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 16px;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+  }
+
+  .button-active p {
+    font-size: 12pt;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
+  }
+
+  .button:active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+  }
+
+  .button:active p {
+    font-size: 12pt;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
+  }
+
+  .button:hover p {
+    font-size: 12pt;
+    opacity: 50%;
+  }
+
+  .button:hover:active p {
+    font-size: 12pt;
+    opacity: 100% !important;
+  }
+
+  /* HOME PAGE HERO END */
+}
+
+@media screen and (max-width: 480px) {
+  .home-hero {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero-image-container {
+    width: 50%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .home-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .home-hero-text * {
+    text-align: center;
+  }
+
+  p {
+    font-size: 12pt;
+  }
+
+  h2 {
+    font-size: 24pt;
+  }
+
+  .button-container {
+    height: fit-content;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding: 5px;
+    gap: 20px;
+
+    background: #1c1c1c;
+    border: 2px solid #343434;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 55px;
+  }
+
+  .button {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px 16px;
+    user-select: none;
+    align-self: center;
+
+    border-radius: 25px;
+    font-size: 12pt;
+  }
+
+  .button p {
+    font-size: 12pt;
+    font-weight: 700 !important;
+  }
+
+  .button-active {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 16px;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+  }
+
+  .button-active p {
+    font-size: 12pt;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
+  }
+
+  .button:active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+  }
+
+  .button:active p {
+    font-size: 12pt;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
+  }
+
+  .button:hover p {
+    font-size: 12pt;
+    opacity: 50%;
+  }
+
+  .button:hover:active p {
+    font-size: 12pt;
+    opacity: 100% !important;
+  }
+
+  /* HOME PAGE HERO END */
+}

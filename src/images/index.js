@@ -7,3 +7,4 @@ export { default as veryCard } from "./vcsCardImg.png";
 export { default as boldCard } from "./boldCardImg.png";
 export { default as Banner1 } from "./banner1.png";
 export { default as Banner2 } from "./banner2.png";
+export { default as HeroImage } from "./hero-image.png";

@@ -1,13 +1,14 @@
 import React from "react";
 import * as Icons from "../../icons";
+import styles from "./Navigation.module.css";
 import { motion } from "framer-motion";
 import { useMatch, useResolvedPath } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const iconAnimate = {
-    hover: { rotate: 360, transition: { ease: "easeOut" } },
-    click: { rotate: 0, transition: { ease: "easeOut" } },
+    hover: { rotate: 360, transition: { ease: "easeOut", duration: 0.6 } },
+    click: { rotate: 0, transition: { ease: "easeOut", duration: 0.6 } },
   };
 
   const CustomLink = ({ to, children, props }) => {
@@ -30,7 +31,7 @@ const Navigation = () => {
   return (
     <div className={"banner"}>
       <div>
-        <p>marcelo chaman mallqui</p>
+        <p className={styles.webtitle}>marcelo chaman mallqui</p>
       </div>
       <div className={"nav-icons-div"}>
         <motion.a
@@ -96,7 +97,7 @@ const Navigation = () => {
       </div>
       <div className={"nav-bar float-middle"}>
         <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/About">About</CustomLink>
+        {/* <CustomLink to="/About">About</CustomLink> */}
         <CustomLink to="/Playground">Playground</CustomLink>
       </div>
     </div>
