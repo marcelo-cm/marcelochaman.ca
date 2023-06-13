@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../stylesheets/About.module.css";
 import * as Img from "../images";
 import { motion } from "framer-motion";
@@ -26,7 +26,9 @@ const Card = ({ url, image, orgName, positionName }) => {
 };
 
 function Home() {
-  const cardsCur = [
+  const [cardsShown, setCardsShown] = useState("present");
+
+  const cardsPresent = [
     {
       url: "https://memoria.live/",
       image: Img.MemoriaCard,
@@ -47,7 +49,7 @@ function Home() {
     },
   ];
 
-  const cardsPrev22 = [
+  const cardsPast = [
     {
       url: "https://www.instagram.com/ustudios__/",
       image: Img.uCard,
@@ -67,6 +69,8 @@ function Home() {
       positionName: "CEO ['21-'22]",
     },
   ];
+
+  const cardsCur = cardsShown === "present" ? cardsPresent : cardsPast;
 
   return (
     <div className={"content-body"}>
@@ -121,22 +125,44 @@ function Home() {
           />
         </div>
       </div>
+      <div className={"nav-bar"}>
+        <button
+          onClick={() => setCardsShown("past")}
+          className={`${styles["button"]} ${
+            cardsShown == "past" ? styles["button-active"] : ""
+          }`}
+        >
+          Past
+          <span
+            style={{
+              paddingLeft: "0.5rem",
+              fontSize: "8pt",
+              alignSelf: "center",
+            }}
+          >
+            ({cardsPast.length})
+          </span>
+        </button>
+        <button
+          onClick={() => setCardsShown("present")}
+          className={`${styles["button"]} ${
+            cardsShown == "present" ? styles["button-active"] : ""
+          }`}
+        >
+          Present
+          <span
+            style={{
+              paddingLeft: "0.5rem",
+              fontSize: "8pt",
+              alignSelf: "center",
+            }}
+          >
+            ({cardsPresent.length})
+          </span>
+        </button>
+      </div>
       <div className={"gallery"}>
         {cardsCur.map((card, index) => {
-          return (
-            <Card
-              key={index}
-              url={card.url}
-              image={card.image}
-              orgName={card.orgName}
-              positionName={card.positionName}
-            />
-          );
-        })}
-      </div>
-      <p>Previous & Miscellaneous Projects</p>
-      <div className={"gallery"}>
-        {cardsPrev22.map((card, index) => {
           return (
             <Card
               key={index}
