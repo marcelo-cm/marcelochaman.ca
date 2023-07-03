@@ -97,7 +97,7 @@ const Navigation = () => {
       </div>
       <div className={"nav-bar float-middle"}>
         <CustomLink to="/">Home</CustomLink>
-        {/* <CustomLink to="/About">About</CustomLink> */}
+        <CustomLink to="/Gallery">Gallery</CustomLink>
         <CustomLink to="/Playground">Playground</CustomLink>
       </div>
     </div>

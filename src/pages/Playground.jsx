@@ -1,41 +1,52 @@
 import s from "../stylesheets/Playground.module.css";
 import React from "react";
+import * as LockedIn from "./projects/LockedInPhotos";
+
+const Card = ({ link, image, title, description }) => {
+  return (
+    <div>
+      <a href={link}>
+        <div className={"card"}>
+          <div className={"card-image"}>
+            <img src={image} />
+          </div>
+          <div className={"name-details"}>
+            <div className="organization">
+              <p>{title}</p>
+            </div>
+            <div className="position">
+              <p>{description}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  );
+};
 
 function Playground() {
-  // Use require.context to dynamically load the images from the GalleryImages folder
-  const filmContext = require.context(
-    "../images/film",
-    false,
-    /\.(jpe?g|`png|gif|svg)$/
-  );
-  const film = filmContext.keys().map(filmContext);
+  const projects = [
+    {
+      link: "/Playground/LockedIn",
+      image: require("./projects/LockedInPhotos/LOCKEDIN-COVER.png"),
+      title: "Locked In",
+      description: "An app for accountability, built for builders",
+    },
+  ];
 
-  const ustudiosContext = require.context(
-    "../images/ustudios",
-    false,
-    /\.(jpe?g|png|gif|svg)$/
-  );
-  const ustudios = ustudiosContext.keys().map(ustudiosContext);
-
-  // Render the image gallery
   return (
     <div className="content-body">
-      <div className={s.imgGallery}>
-        <div className={s.galleryTitle}>
-          <p className="rotateNinetyCounter">photos</p>
-        </div>
-        {film.map((image, index) => (
-          <img key={index} src={image} alt="" />
-        ))}
-      </div>
-      <div className={s.imgGallery}>
-        <div className={s.galleryTitle}>
-          <p className="rotateNinetyCounter">ustudios</p>
-        </div>
-        {ustudios.map((image, index) => (
-          <img key={index} src={image} alt="" />
-        ))}
-      </div>
+      {projects.map((card, index) => {
+        return (
+          <Card
+            key={index}
+            link={card.link}
+            image={card.image}
+            title={card.title}
+            description={card.description}
+          />
+        );
+      })}
     </div>
   );
 }

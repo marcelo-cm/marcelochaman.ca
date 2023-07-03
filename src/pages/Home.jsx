@@ -47,6 +47,18 @@ function Home() {
       orgName: "University Media Group | 50k Follower Platform",
       positionName: "Co-founder & CSO",
     },
+    {
+      url: "https://www.cucai.ca",
+      image: Img.CUCAICard,
+      orgName: "CUCAI | 320 Delegate Conference on AI",
+      positionName: "Co-President",
+    },
+    {
+      url: "https://recalcacademy.com/",
+      image: Img.RecalcCard,
+      orgName: "Recalc Academy",
+      positionName: "AI Research Analyst",
+    },
   ];
 
   const cardsPast = [
