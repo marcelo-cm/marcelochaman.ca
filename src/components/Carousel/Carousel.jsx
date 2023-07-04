@@ -49,7 +49,7 @@ const Carousel = ({ items }) => {
           {items.map((item) => {
             return (
               <div className={"carouselItem"}>
-                <img className={"carouselImg"} src={item.image} width="50%" />
+                <img className={"carouselImg"} src={item.image} />
               </div>
             );
           })}
