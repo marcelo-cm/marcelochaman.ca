@@ -1,10 +1,17 @@
+import Carousel from "../../../components/Carousel/Carousel";
+import * as Images from "./images";
+
 function LockedIn() {
+  const images = [
+    { image: Images.Cover, alt: "Cover" },
+    { image: Images.About, alt: "About" },
+    { image: Images.How1, alt: "How it Works" },
+    { image: Images.How2, alt: "How it Works" },
+  ];
+
   return (
     <div className="content-body">
-      <img src={require("./images/LOCKEDIN-COVER.png")} width="50%" />
-      <img src={require("./images/WHAT IS LOCKEDIN.png")} width="50%" />
-      <img src={require("./images/HOW LOCKED IN WORKS.png")} width="50%" />
-      <img src={require("./images/RAGH.png")} width="50%" />
+      <Carousel items={images} />
     </div>
   );
 }

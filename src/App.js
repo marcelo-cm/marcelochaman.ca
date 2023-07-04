@@ -1,8 +1,6 @@
 import Inspect from "inspx";
 import { Route, Routes } from "react-router-dom";
 
-import stylesheets from "./pages/Home/Home.module.css";
-
 import Navigation from "./components/Navigation/Navigation.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Gallery from "./pages/Gallery/Gallery.jsx";

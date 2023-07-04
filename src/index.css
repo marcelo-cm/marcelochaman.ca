@@ -379,6 +379,57 @@ h2 {
   /* GALLERY SECTION END */
 
   /* CONTENT BODY END */
+
+  /* CAROUSEL */
+
+  .carousel {
+    overflow: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+    padding-top: 1rem;
+  }
+
+  .carouselWrapper {
+    width: calc(100% - 3rem);
+    border: 2px solid #272727;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #111111 0%, #11111100 100%);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.05);
+    margin: 1rem;
+  }
+
+  .carouselInner {
+    white-space: nowrap;
+    transition: transform 0.4s;
+  }
+
+  .carouselItem {
+    display: inline-flex;
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .carouselItemText {
+    font-size: 20pt;
+  }
+
+  .carouselImg {
+    filter: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -411,7 +462,7 @@ h2 {
 
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     align-items: center;
     padding: 0 2%;
     position: sticky;
@@ -637,4 +688,47 @@ h2 {
   /* GALLERY SECTION END */
 
   /* CONTENT BODY END */
+
+  /* CAROUSEL */
+
+  .carousel {
+    overflow: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .carouselWrapper {
+    width: 100%;
+    border: 2px solid #272727;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #111111 0%, #11111100 100%);
+  }
+
+  .carouselInner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+  }
+
+  .carouselItem {
+    display: inline-flex;
+    gap: 0.5rem;
+    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carouselImg {
+    filter: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselButtons {
+    display: none;
+  }
 }

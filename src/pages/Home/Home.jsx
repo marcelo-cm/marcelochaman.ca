@@ -2,30 +2,36 @@ import React, { useState } from "react";
 import styles from "./Home.module.css";
 import * as Img from "./images";
 import { motion } from "framer-motion";
+import Card from "../../components/Card/Card";
 
-const Card = ({ url, image, orgName, positionName }) => {
-  return (
-    <div>
-      <a href={url}>
-        <div className={"card"}>
-          <div className={"card-image"}>
-            <img src={image} alt="Organization Graphic" />
-          </div>
-          <div className={"name-details"}>
-            <div className="organization">
-              <p>{orgName}</p>
-            </div>
-            <div className="position">
-              <p>{positionName}</p>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  );
-};
+// const Card = ({ url, image, orgName, positionName }) => {
+//   return (
+//     <div>
+//       <a href={url}>
+//         <div className={"card"}>
+//           <div className={"card-image"}>
+//             <img src={image} alt="Organization Graphic" />
+//           </div>
+//           <div className={"name-details"}>
+//             <div className="organization">
+//               <p>{orgName}</p>
+//             </div>
+//             <div className="position">
+//               <p>{positionName}</p>
+//             </div>
+//           </div>
+//         </div>
+//       </a>
+//     </div>
+//   );
+// };
 
 function Home() {
+  const iconAnimate = {
+    hover: { rotate: 360, transition: { ease: "easeOut", duration: 0.6 } },
+    click: { rotate: 0, transition: { ease: "easeOut", duration: 0.6 } },
+  };
+
   const [cardsShown, setCardsShown] = useState("present");
 
   const cardsPresent = [
@@ -121,6 +127,7 @@ function Home() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              variants={iconAnimate}
               className={styles["button"]}
               target="_blank"
               href="mailto: marcechaman@gmail.com"
@@ -138,9 +145,13 @@ function Home() {
         </div>
       </div>
       <div className={"nav-bar"}>
-        <button
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          variants={iconAnimate}
           onClick={() => setCardsShown("past")}
           className={`${styles["button"]} ${
+            // eslint-disable-next-line
             cardsShown == "past" ? styles["button-active"] : ""
           }`}
         >
@@ -154,10 +165,14 @@ function Home() {
           >
             ({cardsPast.length})
           </span>
-        </button>
-        <button
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          variants={iconAnimate}
           onClick={() => setCardsShown("present")}
           className={`${styles["button"]} ${
+            // eslint-disable-next-line
             cardsShown == "present" ? styles["button-active"] : ""
           }`}
         >
@@ -171,7 +186,7 @@ function Home() {
           >
             ({cardsPresent.length})
           </span>
-        </button>
+        </motion.button>
       </div>
       <div className={"gallery"}>
         {cardsCur.map((card, index) => {
@@ -180,8 +195,8 @@ function Home() {
               key={index}
               url={card.url}
               image={card.image}
-              orgName={card.orgName}
-              positionName={card.positionName}
+              title={card.orgName}
+              desc={card.positionName}
             />
           );
         })}
