@@ -1,17 +1,17 @@
-import s from "../stylesheets/Playground.module.css";
+import s from "../Playground/Playground.module.css";
 import React from "react";
 
 function Gallery() {
   // Use require.context to dynamically load the images from the GalleryImages folder
   const filmContext = require.context(
-    "../images/film",
+    "./photos",
     false,
     /\.(jpe?g|`png|gif|svg)$/
   );
   const film = filmContext.keys().map(filmContext);
 
   const ustudiosContext = require.context(
-    "../images/ustudios",
+    "./ustudios",
     false,
     /\.(jpe?g|png|gif|svg)$/
   );

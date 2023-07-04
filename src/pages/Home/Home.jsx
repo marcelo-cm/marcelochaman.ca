@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "../stylesheets/About.module.css";
-import * as Img from "../images";
+import styles from "./Home.module.css";
+import * as Img from "./images";
 import { motion } from "framer-motion";
 
 const Card = ({ url, image, orgName, positionName }) => {

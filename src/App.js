@@ -1,11 +1,13 @@
-import Home from "./pages/Home.jsx";
 import Inspect from "inspx";
-import stylesheets from "./stylesheets/Home.css";
-import Playground from "./pages/Playground";
-import Navigation from "./assets/Navigation/Navigation";
-import LockedIn from "./pages/projects/LockedIn.jsx";
 import { Route, Routes } from "react-router-dom";
-import Gallery from "./pages/Gallery.jsx";
+
+import stylesheets from "./pages/Home/Home.module.css";
+
+import Navigation from "./components/Navigation/Navigation.jsx";
+import Home from "./pages/Home/Home.jsx";
+import Gallery from "./pages/Gallery/Gallery.jsx";
+import Playground from "./pages/Playground/Playground.jsx";
+import LockedIn from "./pages/Playground/LockedIn/LockedIn.jsx";
 
 function App() {
   return (

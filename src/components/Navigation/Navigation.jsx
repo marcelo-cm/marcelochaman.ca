@@ -1,5 +1,5 @@
 import React from "react";
-import * as Icons from "../../icons";
+import * as Icons from "./icons";
 import styles from "./Navigation.module.css";
 import { motion } from "framer-motion";
 import { useMatch, useResolvedPath } from "react-router-dom";

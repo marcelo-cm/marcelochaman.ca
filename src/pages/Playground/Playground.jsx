@@ -1,6 +1,6 @@
-import s from "../stylesheets/Playground.module.css";
+import s from "./Playground.module.css";
 import React from "react";
-import * as LockedIn from "./projects/LockedInPhotos";
+import * as LockedIn from "./LockedIn/images";
 
 const Card = ({ link, image, title, description }) => {
   return (
@@ -28,7 +28,7 @@ function Playground() {
   const projects = [
     {
       link: "/Playground/LockedIn",
-      image: require("./projects/LockedInPhotos/LOCKEDIN-COVER.png"),
+      image: require("./LockedIn/images/LOCKEDIN-COVER.png"),
       title: "Locked In",
       description: "An app for accountability, built for builders",
     },
