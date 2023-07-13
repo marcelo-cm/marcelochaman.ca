@@ -94,12 +94,12 @@ function Home() {
     <div className={"content-body"}>
       <div className={styles["home-hero"]}>
         <div className={styles["home-hero-text"]}>
-          <h2>Hey! I'm Marcelo Chaman Mallqui</h2>
+          <h2>Hey! I'm Marcelo Chaman Mallqui...</h2>
           <p>
             Second-year Commerce & Computing student at Queen’s University in
             Kingston, ON. I’m extremely passionate about tech, social impact,
-            and art. I'm a self-taught front-end developer and aspire to be a
-            successful startup founder and product manager. <br />
+            and art! I'm a self-taught front-end developer and aspire to be a
+            startup founder and product manager. <br />
             <br />
             Currently, I'm the Managing Director of Operations at{" "}
             <a target="_blank" rel="noreferrer" href="https://www.qmind.ca/">

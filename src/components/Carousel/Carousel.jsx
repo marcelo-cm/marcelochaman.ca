@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from "../../pages/Home/Home.module.css";
 // import { CarouselItem } from "./CarouselItem";
 
-const Carousel = ({ items }) => {
+const Carousel = ({ items, auto }) => {
   const iconAnimate = {
     hover: { rotate: 360, transition: { ease: "easeOut", duration: 0.6 } },
     click: { rotate: 0, transition: { ease: "easeOut", duration: 0.6 } },
@@ -24,19 +24,21 @@ const Carousel = ({ items }) => {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      updateIndex((prevIndex) => {
-        if (prevIndex + 1 >= items.length) {
-          return 0;
-        } else {
-          return prevIndex + 1;
-        }
-      });
-    }, 3000);
+    if (auto) {
+      const interval = setInterval(() => {
+        updateIndex((prevIndex) => {
+          if (prevIndex + 1 >= items.length) {
+            return 0;
+          } else {
+            return prevIndex + 1;
+          }
+        });
+      }, 3000);
 
-    return () => {
-      clearInterval(interval);
-    };
+      return () => {
+        clearInterval(interval);
+      };
+    }
   }, []);
 
   return (

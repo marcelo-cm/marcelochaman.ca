@@ -21,6 +21,7 @@ function Playground() {
             image={card.image}
             title={card.title}
             desc={card.description}
+            properties={"UX, Product, Figma"}
           />
         );
       })}
