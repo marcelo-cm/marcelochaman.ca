@@ -42,7 +42,7 @@ const Carousel = ({ items, auto }) => {
   }, []);
 
   return (
-    <div className={"carousel"}>
+    <div className={"carousel self-center"}>
       <div className={"carouselWrapper"}>
         <div
           className={"carouselInner"}

@@ -172,7 +172,7 @@ function Memoria() {
                   </li>
                   <div className="flex flex-col my-4 gap-2">
                     <img
-                      className="border-4 md:border-8 rounded-3xl border-[#dedede]/10"
+                      className="border-8 rounded-3xl border-[#dedede]/10"
                       src={Images.MV1Create}
                     />
                     <img
