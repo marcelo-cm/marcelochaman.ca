@@ -27,11 +27,15 @@ const Card = ({ url, image, title, desc, properties }) => {
             <div className="position">
               <p>{desc}</p>
             </div>
-            <div className="flex flex-row gap-2 pt-2">
-              {propertiesMappable?.map((property) => (
-                <div className="nav-item-active text-xs">{property}</div>
-              ))}
-            </div>
+            {properties ? (
+              <div className="flex flex-row gap-2 pt-2">
+                {propertiesMappable?.map((property) => (
+                  <div className="nav-item-active text-xs">{property}</div>
+                ))}
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </a>

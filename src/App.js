@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home.jsx";
 import Gallery from "./pages/Gallery/Gallery.jsx";
 import Playground from "./pages/Playground/Playground.jsx";
 import LockedIn from "./pages/Playground/LockedIn/LockedIn.jsx";
+import Memoria from "./pages/Playground/Memoria/Memoria.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/Gallery" element={<Gallery />} />
             <Route path="/Playground" element={<Playground />} />
             <Route path="/Playground/LockedIn" element={<LockedIn />} />
+            <Route path="/Playground/Memoria" element={<Memoria />} />
           </Routes>
         </div>
       </Inspect>

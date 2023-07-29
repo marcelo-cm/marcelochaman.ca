@@ -1,0 +1,9 @@
+export { default as MV1Create } from "./MV1-CREATE.png";
+export { default as MV1Create2 } from "./MV1-CREATE2.png";
+export { default as MV1Ask } from "./MV1-ASK.png";
+export { default as MV1View } from "./MV1-VIEW.png";
+export { default as MV2Journal } from "./MV2-JOURNAL.png";
+export { default as MV2Reflect } from "./MV2-REFLECT.png";
+export { default as MV2View } from "./MV2-VIEW.png";
+export { default as MV2Landing } from "./MV2-LANDING.png";
+export { default as Cover } from "./MEMORIA-COVER.png";

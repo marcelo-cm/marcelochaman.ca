@@ -37,7 +37,7 @@ function Home() {
   const cardsPresent = [
     {
       url: "https://memoria.live/",
-      image: Img.MemoriaCard,
+      image: require("../Playground/Memoria/images/MEMORIA-COVER.png"),
       orgName: "Memoria | AI-Powered Second Brain",
       positionName: "Front-End + Product",
     },
