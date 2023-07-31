@@ -7,3 +7,4 @@ export { default as MV2Reflect } from "./MV2-REFLECT.png";
 export { default as MV2View } from "./MV2-VIEW.png";
 export { default as MV2Landing } from "./MV2-LANDING.png";
 export { default as Cover } from "./MEMORIA-COVER.png";
+export { default as MV2MAU } from "./MV2-MAU.png";

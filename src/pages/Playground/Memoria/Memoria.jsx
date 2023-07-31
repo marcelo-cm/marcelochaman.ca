@@ -38,6 +38,7 @@ function Memoria() {
               <h3 className="text-xs opacity-50">TECH STACK</h3>
               <p>Reactjs</p>
               <p>Nodejs</p>
+              <p>Tailwind CSS</p>
               <p>Figma</p>
               <p>Supabase</p>
             </div>
@@ -67,7 +68,7 @@ function Memoria() {
                 April 16th, was almost entirely blank. Besides some failed
                 attempts to start personal projects, I hadn't yet put all the
                 hours I spent on CodeAcademy in practice. Honestly, I thought I
-                was pretty good at this front thing, until I actually started
+                was pretty good at this frontend thing, until I actually started
                 doing frontends. My first startup was less than I had wished,
                 but everything I had hoped & expected – I wished for a homerun,
                 but I got a couple of singles.
@@ -82,6 +83,11 @@ function Memoria() {
                 your spontaneous thoughts within one natural language query away
                 – eliminating the need for robust note/thought organization
                 systems.
+              </p>
+              <p>
+                We worked in a very lean environment, having classic stand ups &
+                co-working sessions almost daily as I picked up React, Node, Git
+                & Tailwind.
               </p>
               <p>
                 Our team consisted of myself & 3 bright individuals. All of whom
@@ -254,12 +260,11 @@ function Memoria() {
               </p>
               <p>
                 As with many Version 1 products, we have various problems we
-                overlooked. Users could had a hard time knowing what to ask if
-                they didn't come to the platform with questions, but their
-                questions were no good if they didn't already put notes in – we
-                had a chicken & an egg problem which overall meant that the
-                activation time of our product was 3 days, and that was far too
-                long.
+                overlooked. Users had a hard time knowing what to ask if they
+                didn't come to the platform with questions, but their questions
+                were no good if they hadn't already put notes in – we had a
+                chicken-and-egg problem, which meant that the activation time of
+                our product was three days, and that was far too long.
               </p>
               <p>
                 Unfortunately, during this time the team disbanded because of
@@ -322,7 +327,7 @@ function Memoria() {
                 interface.
               </p>
               <p>
-                I then brought on a high-school kid who was interested in
+                I then brought on a highschool kid who was interested in
                 exploring tech, and we studied various products to understand
                 the good and the bad from each journal product's user
                 experience, language, and UI. Memoria was then condensed all
@@ -378,13 +383,21 @@ function Memoria() {
                 that, but in a visual format.
               </p>
               <p>
-                There were a lot of major changes made, and we're yet to GTM
-                with this new version (though it is live on production), but I
-                believe that this should begin to resolve many of the pain
-                points users (and we were) having. This time around we spent
-                much more time on research (Product, UX, User) and much more
-                time focusing on the details, which I believe is a step in the
-                right direction.
+                There were a lot of major changes made, and we have yet to
+                go-to-market (GTM) with this new version (though it is live in
+                production), but I believe that this should begin to resolve
+                many of the pain points users were experiencing, as well as our
+                own challenges. This time around we spent much more time on
+                research (Product, UX, User) and much more time focusing on the
+                details, which I believe is a step in the right direction.
+              </p>
+              <img
+                className="border-8 rounded-3xl my-4 border-[#dedede]/10"
+                src={Images.MV2MAU}
+              />
+              <p>
+                The data immediately following the update did show this was true
+                as well.
               </p>
             </div>
             <div className="mb-4 flex flex-col gap-2" id="Overview">
@@ -403,27 +416,49 @@ function Memoria() {
                 problems.
               </p>
               <p>
-                I also learned extensively how to design to optimize for
-                front-end development processes. I learned how important it is
-                for a designer to be technical, or at least have a deep
-                understanding of the experience that happens when you implement
-                a front-end. With this project I was able to learn from two
-                amazing Product Managers on how to roadmap, how to ideate, and
-                simply helped give me perspective on how to address problems and
-                assess products.
+                Through this project, I got great insights into designing,
+                optimizing for front-end development processes. I realized how
+                vital it is for designer's to have a technical understanding, or
+                at the very least, a comprehension of the dynamics involved in
+                implementing a front-end. Working alongside two amazing Product
+                Managers, I learned how to effectively roadmap, how to best go
+                through the ideation process, and got a fresh perspective on
+                problem-solving and product assessment.
               </p>
               <p>
                 My next product, I'll be able to take all the learnings and
                 hopefully achieve a greater impact for others, a greater reach,
-                and attain even greater learnings. Along this journey, I am
-                thankful to have had all the good people at RippleX Ventures
-                during their Fellowship program – where I learnt so much about
-                creating companies and dealing with VC firms.
+                and attain even greater learnings. I want to express my profound
+                gratitude to the dedicated team at RippleX Ventures and their
+                Fellowship program. Their guidance has been instrumental in
+                teaching me essential knowledge about founding companies and
+                engaging with venture capital firms & connecting me with a
+                community of founders.
               </p>
             </div>
-            <div className="mb-4" id="Next">
+            <div className="mb-4 flex flex-col gap-2" id="Next">
               <h3 className="text-xs opacity-50">NEXT STEPS</h3>
-              <p>Learn more, build, ship.</p>
+              <p>
+                Learn more, build, ship. I think this is the first step of the
+                journey up this mountain, and I will simply continue running.
+              </p>
+            </div>
+            <div className="mb-4 flex flex-col gap-2" id="Next">
+              <h3 className="text-xs opacity-50">
+                <hr />
+              </h3>
+              <h3 className="text-xs opacity-50">NOTES</h3>
+              <p>
+                If you'd like to reach out, please message me on{" "}
+                <a href="https://www.linkedin.com/in/marc-cham/">LinkedIn</a>,
+                or you can <a href="mailto:marcechaman@gmail.com">Email me</a>.
+                If you'd like to take a peek at my GitHub since I started this
+                project, look <a href="https://github.com/marcelo-cm">here.</a>
+              </p>
+              <p>
+                Thank you to those who read, edited & gave me feedback on this
+                capsule.
+              </p>
             </div>
           </div>
         </div>
