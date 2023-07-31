@@ -393,7 +393,7 @@ function Memoria() {
                 My goal is to become a Full-stack developer & Product Manager,
                 meaning that I want to be able to understand product development
                 from every angle: Business, Design and Tech. Achieving this
-                goal, I believe, will position be to be a good founder & have a
+                goal, I believe, will position me to be a good founder & have a
                 good relationship with the rest of my team because I am able to
                 understand the work they are all doing, from first-hand
                 experience. Memoria was a grand step towards that direction,
