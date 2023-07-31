@@ -2,6 +2,7 @@ import Carousel from "../../../components/Carousel/Carousel";
 import * as Images from "./images";
 import React, { useEffect } from "react";
 import mixpanel from "mixpanel-browser";
+import { Helmet } from "react-helmet";
 
 function Memoria() {
   const images = [
@@ -13,6 +14,14 @@ function Memoria() {
 
   return (
     <div className="content-body">
+      <Helmet>
+        <meta property="og:title" content="Memoria Capsule" />
+        <meta
+          property="og:description"
+          content="My First Startup. Story & Learnings."
+        />
+        <meta property="og:image" content={Images.Cover} />
+      </Helmet>
       <div className="max-w-[1000px] w-full flex flex-col gap-2">
         <Carousel items={images} />
         <div>
