@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d9eed3cf.css",
-    "main.js": "/static/js/main.c8f3574a.js",
+    "main.js": "/static/js/main.703aef0d.js",
     "static/js/787.fc537e31.chunk.js": "/static/js/787.fc537e31.chunk.js",
     "static/media/uhead-3dspin-final.gif": "/static/media/uhead-3dspin-final.31b554cd1f69a68814da.gif",
     "static/media/MV2-LANDING.png": "/static/media/MV2-LANDING.f937fddb17801256e85c.png",
@@ -105,6 +105,7 @@
     "static/media/UMGCardImg.png": "/static/media/UMGCardImg.efba0200518fa853c8fd.png",
     "static/media/RecalcCardImg.png": "/static/media/RecalcCardImg.32a73f0052518aaa492c.png",
     "static/media/FRIENDS.png": "/static/media/FRIENDS.41f34dbc0747b4cfaccc.png",
+    "static/media/MV2-MAU.png": "/static/media/MV2-MAU.f269efc5f83d37b6eea9.png",
     "static/media/polaroid0031.jpg": "/static/media/polaroid0031.e1b5826cb8a93e49fe44.jpg",
     "static/media/polaroid0014.jpg": "/static/media/polaroid0014.9febf9e0a24ac404cc1c.jpg",
     "static/media/PUBLISH.png": "/static/media/PUBLISH.e6a1c686f451c4ea6bc7.png",
@@ -121,11 +122,11 @@
     "static/media/email-icon.svg": "/static/media/email-icon.80773e570805083057979760b5436a18.svg",
     "static/media/room-icon.svg": "/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
     "main.d9eed3cf.css.map": "/static/css/main.d9eed3cf.css.map",
-    "main.c8f3574a.js.map": "/static/js/main.c8f3574a.js.map",
+    "main.703aef0d.js.map": "/static/js/main.703aef0d.js.map",
     "787.fc537e31.chunk.js.map": "/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9eed3cf.css",
-    "static/js/main.c8f3574a.js"
+    "static/js/main.703aef0d.js"
   ]
 }
