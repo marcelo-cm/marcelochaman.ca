@@ -1,5 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../../components/Card/Card";
+import mixpanel from "mixpanel-browser";
+
+mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
+  debug: true,
+  // track_pageview: true,
+  persistence: "localStorage",
+  ignore_dnt: true,
+});
 
 function Playground() {
   const projects = [
@@ -18,6 +26,10 @@ function Playground() {
       properties: "Frontend, Product, AI",
     },
   ];
+
+  useEffect(() => {
+    mixpanel.track("View on Playground");
+  }, []);
 
   return (
     <div className="content-body gallery">

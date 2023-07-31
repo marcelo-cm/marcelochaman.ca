@@ -1,5 +1,7 @@
 import Carousel from "../../../components/Carousel/Carousel";
 import * as Images from "./images";
+import React, { useEffect } from "react";
+import mixpanel from "mixpanel-browser";
 
 function Memoria() {
   const images = [

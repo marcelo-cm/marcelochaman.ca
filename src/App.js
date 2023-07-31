@@ -8,6 +8,15 @@ import Playground from "./pages/Playground/Playground.jsx";
 import LockedIn from "./pages/Playground/LockedIn/LockedIn.jsx";
 import Memoria from "./pages/Playground/Memoria/Memoria.jsx";
 
+import mixpanel from "mixpanel-browser";
+
+mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
+  debug: true,
+  track_pageview: true,
+  persistence: "localStorage",
+  ignore_dnt: true,
+});
+
 function App() {
   return (
     <div className="body">

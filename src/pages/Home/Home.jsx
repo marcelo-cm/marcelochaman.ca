@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import * as Img from "./images";
 import { motion } from "framer-motion";
 import Card from "../../components/Card/Card";
+import mixpanel from "mixpanel-browser";
+
+mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
+  debug: true,
+  // track_pageview: true,
+  persistence: "localStorage",
+  ignore_dnt: true,
+});
 
 // const Card = ({ url, image, orgName, positionName }) => {
 //   return (
@@ -31,6 +39,10 @@ function Home() {
     hover: { rotate: 360, transition: { ease: "easeOut", duration: 0.6 } },
     click: { rotate: 0, transition: { ease: "easeOut", duration: 0.6 } },
   };
+
+  useEffect(() => {
+    mixpanel.track("View on Home");
+  }, []);
 
   const [cardsShown, setCardsShown] = useState("present");
 

@@ -1,5 +1,13 @@
 import s from "../Playground/Playground.module.css";
-import React from "react";
+import React, { useEffect } from "react";
+import mixpanel from "mixpanel-browser";
+
+mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
+  debug: true,
+  // track_pageview: true,
+  persistence: "localStorage",
+  ignore_dnt: true,
+});
 
 function Gallery() {
   // Use require.context to dynamically load the images from the GalleryImages folder
@@ -16,6 +24,10 @@ function Gallery() {
     /\.(jpe?g|png|gif|svg)$/
   );
   const ustudios = ustudiosContext.keys().map(ustudiosContext);
+
+  useEffect(() => {
+    mixpanel.track("View on Gallery");
+  }, []);
 
   // Render the image gallery
   return (
