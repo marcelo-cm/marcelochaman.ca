@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9eed3cf.css",
-    "main.js": "/static/js/main.4dc42991.js",
+    "main.css": "/static/css/main.b42e23bd.css",
+    "main.js": "/static/js/main.6b104a30.js",
     "static/js/787.fc537e31.chunk.js": "/static/js/787.fc537e31.chunk.js",
+    "static/media/QMINDv1.gif": "/static/media/QMINDv1.6f693a626b776a27ad4e.gif",
+    "static/media/EasyRecipe-mobile1.gif": "/static/media/EasyRecipe-mobile1.2abbfdaa9edae13a1856.gif",
     "static/media/uhead-3dspin-final.gif": "/static/media/uhead-3dspin-final.31b554cd1f69a68814da.gif",
     "static/media/MV2-LANDING.png": "/static/media/MV2-LANDING.f937fddb17801256e85c.png",
     "static/media/IMG_3906.jpeg": "/static/media/IMG_3906.2a0d11c1730bb860a775.jpeg",
@@ -121,12 +123,12 @@
     "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.6b7bb368e3c149e8878133f1f060410d.svg",
     "static/media/email-icon.svg": "/static/media/email-icon.80773e570805083057979760b5436a18.svg",
     "static/media/room-icon.svg": "/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
-    "main.d9eed3cf.css.map": "/static/css/main.d9eed3cf.css.map",
-    "main.4dc42991.js.map": "/static/js/main.4dc42991.js.map",
+    "main.b42e23bd.css.map": "/static/css/main.b42e23bd.css.map",
+    "main.6b104a30.js.map": "/static/js/main.6b104a30.js.map",
     "787.fc537e31.chunk.js.map": "/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9eed3cf.css",
-    "static/js/main.4dc42991.js"
+    "static/css/main.b42e23bd.css",
+    "static/js/main.6b104a30.js"
   ]
 }
