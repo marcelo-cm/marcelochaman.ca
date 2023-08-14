@@ -42,7 +42,7 @@ function Gallery() {
       </div>
       <div className={s.imgGallery}>
         <div className={s.galleryTitle}>
-          <p className="rotateNinetyCounter">ustudios</p>
+          <p className="rotateNinetyCounter">fashion</p>
         </div>
         {ustudios.map((image, index) => (
           <img key={index} src={image} alt="" />

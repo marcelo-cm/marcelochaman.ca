@@ -104,8 +104,12 @@ function Home() {
 
   return (
     <div className={"content-body"}>
-      <div className={styles["home-hero"]}>
-        <div className={styles["home-hero-text"]}>
+      <div
+        className={`${
+          styles["home-hero"]
+        } ${"flex flex-col-reverse lg:flex-row"}`}
+      >
+        <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
           <h2>Hey! I'm Marcelo Chaman Mallqui...</h2>
           <p>
             Second-year Commerce & Computing student at Queen’s University in
@@ -114,17 +118,13 @@ function Home() {
             startup founder and product manager. <br />
             <br />
             Currently, I'm the Managing Director of Operations at{" "}
-            <a target="_blank" rel="noreferrer" href="https://www.qmind.ca/">
+            <a target="_blank" href="https://www.qmind.ca/">
               QMIND,
             </a>
-            Canada's largest undergraduate organization on AI & ML. I am
-            building{" "}
-            <a target="_blank" rel="noreferrer" href="https://memoria.live/">
-              Memoria
-            </a>
-             – an AI tool to record, transcribe and talk to your thoughts
-            – alongside a good friend and 2 ex-Google PMs, and represent Queen’s
-            in international case competition!
+            Canada's largest undergraduate organization on AI and organizing{" "}
+            <a href="https://www.cucai.ca/">CUCAI, </a> a 320 delegates annual
+            conference on AI. I also represent Queen’s in international case
+            competition!
             <br />
             <br />
             When I’m not doing any of that I’m watching superhero movies,
@@ -148,13 +148,11 @@ function Home() {
             </motion.a>
           </div>
         </div>
-        <div className={styles["hero-image-container"]}>
-          <img
-            className={styles["hero-image"]}
-            src={Img.HeroImage}
-            alt="Me and the Golden Gate Bridge"
-          />
-        </div>
+        <img
+          className={styles["hero-image"]}
+          src={Img.HeroImage}
+          alt="Me and the Golden Gate Bridge"
+        />
       </div>
       <div className={"nav-bar"}>
         <motion.button

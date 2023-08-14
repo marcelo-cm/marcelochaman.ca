@@ -4,29 +4,23 @@
   .home-hero {
     width: 90%;
     height: fit-content;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
   }
 
-  .hero-image-container {
+  .hero-image {
     width: 35%;
     min-width: 400px;
     max-width: 50%;
-  }
-
-  .hero-image {
-    width: 100%;
   }
 
   .home-hero-text {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    min-width: 50%;
-    width: 60%;
+    /* min-width: 50%; */
+    /* width: 60%; */
     justify-content: left;
   }
 
@@ -121,12 +115,8 @@
     gap: 2rem;
   }
 
-  .hero-image-container {
-    width: 50%;
-  }
-
   .hero-image {
-    width: 100%;
+    width: 50%;
   }
 
   .home-hero-text {
