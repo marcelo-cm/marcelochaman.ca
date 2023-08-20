@@ -7,6 +7,7 @@ import Gallery from "./pages/Gallery/Gallery.jsx";
 import Playground from "./pages/Playground/Playground.jsx";
 import LockedIn from "./pages/Playground/LockedIn/LockedIn.jsx";
 import Memoria from "./pages/Playground/Memoria/Memoria.jsx";
+import SuperDMs from "./pages/Playground/SuperDMs/SuperDMs.jsx";
 
 import mixpanel from "mixpanel-browser";
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="/Playground" element={<Playground />} />
             <Route path="/Playground/LockedIn" element={<LockedIn />} />
             <Route path="/Playground/Memoria" element={<Memoria />} />
+            <Route path="/Playground/SuperDMs" element={<SuperDMs />} />
           </Routes>
         </div>
       </Inspect>

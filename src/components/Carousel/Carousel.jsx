@@ -50,8 +50,22 @@ const Carousel = ({ items, auto }) => {
         >
           {items.map((item) => {
             return (
-              <div className={"carouselItem"}>
-                <img className={"carouselImg"} src={item.image} />
+              <div
+                className={`${"carouselItem"} ${
+                  item.video ? "w-[calc(100%-4rem)] h-full bg-transparent" : ""
+                }`}
+              >
+                {item.video ? (
+                  <iframe
+                    className="carouselImg"
+                    src={item.image}
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                ) : (
+                  <img className={"carouselImg"} src={item.image} />
+                )}
               </div>
             );
           })}

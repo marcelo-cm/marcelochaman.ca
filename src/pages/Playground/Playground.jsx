@@ -26,10 +26,17 @@ function Playground() {
       properties: "Reactjs, Product, AI",
     },
     {
+      link: "/Playground/SuperDMs",
+      image: require("./SuperDMs/images/SuperDMs.png"),
+      title: "Slack App for Accelerators!",
+      description: "Mass personalized DMs w/ slash commands",
+      properties: "Python, Software Design",
+    },
+    {
       link: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
       image: require("./Easy Recipe/EasyRecipe-mobile1.gif"),
       title: "Easy Recipe",
-      description: "An App College Students. UX Case Study.",
+      description: "App For College Students. UX Case Study.",
       properties: "UX, Product, Design",
     },
     {
