@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b42e23bd.css",
-    "main.js": "/static/js/main.6b104a30.js",
+    "main.css": "/static/css/main.352f9c18.css",
+    "main.js": "/static/js/main.d2140b0e.js",
     "static/js/787.fc537e31.chunk.js": "/static/js/787.fc537e31.chunk.js",
     "static/media/QMINDv1.gif": "/static/media/QMINDv1.6f693a626b776a27ad4e.gif",
     "static/media/EasyRecipe-mobile1.gif": "/static/media/EasyRecipe-mobile1.2abbfdaa9edae13a1856.gif",
@@ -73,6 +73,7 @@
     "static/media/IMG_6435.jpg": "/static/media/IMG_6435.0166290d7c840552d855.jpg",
     "static/media/IMG_6229.jpg": "/static/media/IMG_6229.3767f8c3f38298415d25.jpg",
     "static/media/000093090022.jpg": "/static/media/000093090022.c2b7140ce620a69213f8.jpg",
+    "static/media/SuperDMs.png": "/static/media/SuperDMs.875aa230d05cb1be8bd5.png",
     "static/media/000055620004.jpg": "/static/media/000055620004.4a1619b531b62d1229ef.jpg",
     "static/media/000093090025.jpg": "/static/media/000093090025.cc85a185ce71e4bf29d8.jpg",
     "static/media/000093090035.jpg": "/static/media/000093090035.24ffbdd47c4a6dabc156.jpg",
@@ -123,12 +124,12 @@
     "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.6b7bb368e3c149e8878133f1f060410d.svg",
     "static/media/email-icon.svg": "/static/media/email-icon.80773e570805083057979760b5436a18.svg",
     "static/media/room-icon.svg": "/static/media/room-icon.ee91457abd4654db6cfa717054813d56.svg",
-    "main.b42e23bd.css.map": "/static/css/main.b42e23bd.css.map",
-    "main.6b104a30.js.map": "/static/js/main.6b104a30.js.map",
+    "main.352f9c18.css.map": "/static/css/main.352f9c18.css.map",
+    "main.d2140b0e.js.map": "/static/js/main.d2140b0e.js.map",
     "787.fc537e31.chunk.js.map": "/static/js/787.fc537e31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b42e23bd.css",
-    "static/js/main.6b104a30.js"
+    "static/css/main.352f9c18.css",
+    "static/js/main.d2140b0e.js"
   ]
 }
