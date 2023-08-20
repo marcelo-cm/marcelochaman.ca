@@ -90,31 +90,30 @@ function SuperDMs() {
                 (Internal Slack, and Accelerator Slack) with ease. You can
                 allowed others to send messages from your account using your
                 password, and get notification every time your account is used
-                with the message that was sent and where.
+                with the message that was sent and where. <br />
+                <ul className="ml-4">
+                  <li className="list-decimal">
+                    To send a personal DM to each person in a channel, excluding
+                    a few /superdm #channel @ExcludedPerson1 @ExcludedPerson2{" "}
+                    {"<>"}
+                    message [{"<>"} pswd] (optional)
+                    <iframe
+                      className="border-8 rounded-3xl my-4 w-full border-[#dedede]/10"
+                      height="520"
+                      src="https://youtube.com/embed/S4AFpeddyQ8"
+                    ></iframe>
+                  </li>
+                  <li className="list-decimal">
+                    To send a personal DM to various people at once /superdm
+                    @Person1 @Person2 {"<>"} message [{"<>"} pswd] (optional)
+                    <iframe
+                      className="border-8 rounded-3xl my-4 w-full border-[#dedede]/10"
+                      height="520"
+                      src="https://youtube.com/embed/b1NnX2fyqxU"
+                    ></iframe>
+                  </li>
+                </ul>
               </p>
-            </div>
-            <div>
-              <ul className="ml-4">
-                <li className="list-decimal">
-                  To send a personal DM to each person in a channel, excluding a
-                  few /superdm #channel @ExcludedPerson1 @ExcludedPerson2 {"<>"}
-                  message [{"<>"} pswd] (optional)
-                  <iframe
-                    className="border-8 rounded-3xl my-4 w-full border-[#dedede]/10"
-                    height="520"
-                    src="https://youtube.com/embed/S4AFpeddyQ8"
-                  ></iframe>
-                </li>
-                <li className="list-decimal">
-                  To send a personal DM to various people at once /superdm
-                  @Person1 @Person2 {"<>"} message [{"<>"} pswd] (optional)
-                  <iframe
-                    className="border-8 rounded-3xl my-4 w-full border-[#dedede]/10"
-                    height="520"
-                    src="https://youtube.com/embed/b1NnX2fyqxU"
-                  ></iframe>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
